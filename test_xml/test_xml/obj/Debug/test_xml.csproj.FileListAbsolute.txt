@@ -1,0 +1,10 @@
+D:\visual studio 2017\Projects\项目\test_xml\test_xml\bin\Debug\test_xml.exe.config
+D:\visual studio 2017\Projects\项目\test_xml\test_xml\bin\Debug\test_xml.exe
+D:\visual studio 2017\Projects\项目\test_xml\test_xml\bin\Debug\test_xml.pdb
+D:\visual studio 2017\Projects\项目\test_xml\test_xml\bin\Debug\Newtonsoft.Json.dll
+D:\visual studio 2017\Projects\项目\test_xml\test_xml\obj\Debug\test_xml.csprojResolveAssemblyReference.cache
+D:\visual studio 2017\Projects\项目\test_xml\test_xml\obj\Debug\test_xml.Form1.resources
+D:\visual studio 2017\Projects\项目\test_xml\test_xml\obj\Debug\test_xml.Properties.Resources.resources
+D:\visual studio 2017\Projects\项目\test_xml\test_xml\obj\Debug\test_xml.csproj.GenerateResource.Cache
+D:\visual studio 2017\Projects\项目\test_xml\test_xml\obj\Debug\test_xml.exe
+D:\visual studio 2017\Projects\项目\test_xml\test_xml\obj\Debug\test_xml.pdb
