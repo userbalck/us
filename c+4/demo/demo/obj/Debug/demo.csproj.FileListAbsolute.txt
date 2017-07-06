@@ -1,0 +1,9 @@
+D:\VSc#\demo\demo\bin\Debug\demo.exe.config
+D:\VSc#\demo\demo\bin\Debug\demo.exe
+D:\VSc#\demo\demo\bin\Debug\demo.pdb
+D:\VSc#\demo\demo\obj\Debug\demo.csprojResolveAssemblyReference.cache
+D:\VSc#\demo\demo\obj\Debug\demo.Form1.resources
+D:\VSc#\demo\demo\obj\Debug\demo.Properties.Resources.resources
+D:\VSc#\demo\demo\obj\Debug\demo.csproj.GenerateResource.Cache
+D:\VSc#\demo\demo\obj\Debug\demo.exe
+D:\VSc#\demo\demo\obj\Debug\demo.pdb

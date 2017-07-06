@@ -1,0 +1,9 @@
+F:\Svn目录\搬砖-项目\c+4项目\Gps_jx\GPS_jx_excel\bin\Debug\GPS_jx_excel.exe.config
+F:\Svn目录\搬砖-项目\c+4项目\Gps_jx\GPS_jx_excel\bin\Debug\GPS_jx_excel.exe
+F:\Svn目录\搬砖-项目\c+4项目\Gps_jx\GPS_jx_excel\bin\Debug\GPS_jx_excel.pdb
+F:\Svn目录\搬砖-项目\c+4项目\Gps_jx\GPS_jx_excel\obj\Debug\GPS_jx_excel.csprojResolveAssemblyReference.cache
+F:\Svn目录\搬砖-项目\c+4项目\Gps_jx\GPS_jx_excel\obj\Debug\GPS_jx_excel.Form1.resources
+F:\Svn目录\搬砖-项目\c+4项目\Gps_jx\GPS_jx_excel\obj\Debug\GPS_jx_excel.Properties.Resources.resources
+F:\Svn目录\搬砖-项目\c+4项目\Gps_jx\GPS_jx_excel\obj\Debug\GPS_jx_excel.csproj.GenerateResource.Cache
+F:\Svn目录\搬砖-项目\c+4项目\Gps_jx\GPS_jx_excel\obj\Debug\GPS_jx_excel.exe
+F:\Svn目录\搬砖-项目\c+4项目\Gps_jx\GPS_jx_excel\obj\Debug\GPS_jx_excel.pdb
