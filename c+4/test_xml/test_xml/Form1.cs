@@ -16,12 +16,16 @@ namespace test_xml
 	public partial class Form1 : Form
 	{
 		String stPath;
+		int i1;
+		int i2;
 		public Form1()
 		{
 			InitializeComponent();
 			btCreate.Click += BtCreate_Click;
 			btOpen.Click += BtOpen_Click;
+			
 		}
+
 
 		private void BtOpen_Click(object sender, EventArgs e)
 		{
@@ -54,9 +58,18 @@ namespace test_xml
 		/// <param name="e"></param>
 		private void BtCreate_Click(object sender, EventArgs e)
 		{
-			int i1 = Convert.ToInt32(tbi1.Text);  //父节点
-			int i2 = Convert.ToInt32(tbi2.Text);
-			for (int i = 0; i < i1; i++)
+			
+			
+
+			i1 = Convert.ToInt32(tbi1.Text);  //父节点
+			i2 = Convert.ToInt32(tbi2.Text);
+			
+			oulog("添加父节点 :");
+
+
+
+
+			for (int i = 0; i < 1; i++)
 			{
 				TreeNode node = tvXml.Nodes.Add("父节点"+(i+1).ToString());
 				oulog("添加父节点 :");
