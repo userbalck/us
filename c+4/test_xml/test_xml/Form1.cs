@@ -23,15 +23,33 @@ namespace test_xml
 			InitializeComponent();
 			btCreate.Click += BtCreate_Click;
 			btOpen.Click += BtOpen_Click;
-			
+			tbi1.KeyPress += Tbi1_KeyPress;
+			tbi2.KeyPress += Tbi2_KeyPress;
 		}
-
+		//只允许输入数字
+		private void Tbi2_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!char.IsNumber(e.KeyChar) && e.KeyChar != (char)8)
+			{
+				e.Handled = true;
+			}
+		}
+		//只允许输入数字
+		private void Tbi1_KeyPress(object sender, KeyPressEventArgs e)
+		{
+		
+			if (!char.IsNumber(e.KeyChar) && e.KeyChar != (char)8)
+			{
+				e.Handled = true;
+			}
+		}
 
 		private void BtOpen_Click(object sender, EventArgs e)
 		{
+			oulog("打开文件");
 			OpenFileDialog ofd = new OpenFileDialog();
-		
-			if (ofd.ShowDialog()==DialogResult.OK)
+
+			if (ofd.ShowDialog() == DialogResult.OK)
 			{
 				stPath = ofd.FileName;
 				xmldode();
@@ -58,42 +76,38 @@ namespace test_xml
 		/// <param name="e"></param>
 		private void BtCreate_Click(object sender, EventArgs e)
 		{
+			oulog("添加节点");
+				i1 = Convert.ToInt32(tbi1.Text);  //父节点
+				i2 = Convert.ToInt32(tbi2.Text);
 			
-			
-
-			i1 = Convert.ToInt32(tbi1.Text);  //父节点
-			i2 = Convert.ToInt32(tbi2.Text);
-			
-			oulog("添加父节点 :");
-
-
-
-
-			for (int i = 0; i < 1; i++)
-			{
-				TreeNode node = tvXml.Nodes.Add("父节点"+(i+1).ToString());
-				oulog("添加父节点 :");
-				for (int j = 0; j< i2; j++)
+				for (int i = 0; i < i1; i++)
 				{
-					TreeNode node2 = new TreeNode("子节点"+ (i + 1).ToString());
-					node.Nodes.Add(node2);
+					TreeNode node = tvXml.Nodes.Add("父节点" + (i + 1).ToString());
+					oulog("添加父节点 :");
+					for (int j = 0; j < i2; j++)
+					{
+						TreeNode node2 = new TreeNode("子节点" + (i + 1).ToString());
+						node.Nodes.Add(node2);
+					}
+
 				}
-
-			}
-
 			
+
+
 		}
 
 
 
-
-		private void oulog(string v)
+		//添加日志
+		private void oulog(string log)
 		{
-			if (tbLog.GetLineFromCharIndex(tbLog.Text.Length)>100)
+			
+			if (txlog.GetLineFromCharIndex(txlog.Text.Length) > 100)
 			{
-				tbLog.Text = "";
-				tbLog.AppendText(DateTime.Now.ToString("HH:mm:ss")+v+"\r\n");
-				
+				//添加日
+				txlog.AppendText($"[{DateTime.Now.ToString("HH:mm:ss")}] {log}\r\n");
+
+
 			}
 		}
 	}

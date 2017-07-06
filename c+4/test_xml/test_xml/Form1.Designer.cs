@@ -32,7 +32,7 @@
 			this.btCreate = new System.Windows.Forms.Button();
 			this.btCllean = new System.Windows.Forms.Button();
 			this.btDelet = new System.Windows.Forms.Button();
-			this.tbLog = new System.Windows.Forms.TextBox();
+			this.txlog = new System.Windows.Forms.TextBox();
 			this.tbi1 = new System.Windows.Forms.TextBox();
 			this.tbi2 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
@@ -74,13 +74,13 @@
 			this.btDelet.Text = "删除节点";
 			this.btDelet.UseVisualStyleBackColor = true;
 			// 
-			// tbLog
+			// txlog
 			// 
-			this.tbLog.Location = new System.Drawing.Point(1, 403);
-			this.tbLog.Multiline = true;
-			this.tbLog.Name = "tbLog";
-			this.tbLog.Size = new System.Drawing.Size(340, 107);
-			this.tbLog.TabIndex = 5;
+			this.txlog.Location = new System.Drawing.Point(1, 351);
+			this.txlog.Multiline = true;
+			this.txlog.Name = "txlog";
+			this.txlog.Size = new System.Drawing.Size(327, 158);
+			this.txlog.TabIndex = 5;
 			// 
 			// tbi1
 			// 
@@ -133,7 +133,7 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.tbi2);
 			this.Controls.Add(this.tbi1);
-			this.Controls.Add(this.tbLog);
+			this.Controls.Add(this.txlog);
 			this.Controls.Add(this.btDelet);
 			this.Controls.Add(this.btCllean);
 			this.Controls.Add(this.btCreate);
@@ -150,7 +150,7 @@
 		private System.Windows.Forms.Button btCreate;
 		private System.Windows.Forms.Button btCllean;
 		private System.Windows.Forms.Button btDelet;
-		private System.Windows.Forms.TextBox tbLog;
+		private System.Windows.Forms.TextBox txlog;
 		private System.Windows.Forms.TextBox tbi1;
 		private System.Windows.Forms.TextBox tbi2;
 		private System.Windows.Forms.Label label1;
