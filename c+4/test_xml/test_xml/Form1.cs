@@ -19,7 +19,7 @@ namespace test_xml
 		String stPath;
 		int i1;
 		int i2;
-		
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -37,11 +37,12 @@ namespace test_xml
 		}
 
 		//写json
-		public void jsWr() {
+		public void jsWr()
+		{
 			StringWriter sw = new StringWriter();
 			JsonWriter writer = new JsonTextWriter(sw);
-			String iput ="knoljdas";
-			oulog("===iput====="+iput);
+			String iput = "knoljdas";
+			oulog("===iput=====" + iput);
 			writer.WriteStartObject();
 			writer.WritePropertyName(iput);
 			writer.WriteValue("value");
@@ -51,7 +52,7 @@ namespace test_xml
 			writer.Flush();
 
 			string jsonText = sw.GetStringBuilder().ToString();
-			oulog("1111"+jsonText);
+			oulog("1111" + jsonText);
 			Console.WriteLine(jsonText);
 		}
 		//打开json
@@ -67,37 +68,66 @@ namespace test_xml
 		//打开json并解析树
 		public void JsTest()
 		{
-			string test_json = "{\"name\":\"tom\",\"nickname\":\"tony\",\"sex\":\"male\",\"age\":20,\"email\":\"123@123.com\"}";
-			var o = JObject.Parse(test_json);
-			foreach (JToken child in o.Children())
+			tvXml.Nodes.Clear();
+			String test_json = null;
+			OpenFileDialog ofd = new OpenFileDialog();
+			if (ofd.ShowDialog()==DialogResult.OK)
 			{
-				var property1 = child as JProperty;
-				TreeNode nope = tvXml.Nodes.Add(property1.Name);
-				oulog(""+nope);
-				TreeNode node2 = new TreeNode((string)property1.Value);
-				oulog("" + node2);
-				oulog("" + property1.Name + ":" + property1.Value);
-				nope.Nodes.Add(node2);
+				String path=ofd.FileName;
+				oulog("luj==="+path);
+				StreamReader sr = new StreamReader(ofd.FileName,Encoding.Default);
+				test_json = sr.ReadToEnd();
+				sr.Close();
+				oulog("var va==" + test_json);
+
+				//test_json = "{\"name\":\"tom\",\"nickname\":\"tony\",\"sex\":\"male\",\"age\":20,\"email\":\"123@123.com\"}";
+				var va = JObject.Parse(test_json);
+				//遍历，添加到集合
+				foreach (JToken child in va.Children())
+				{
+					var property1 = child as JProperty;
+					TreeNode node = tvXml.Nodes.Add(property1.Name.ToString());
+					TreeNode node2 = new TreeNode(property1.Value.ToString());
+					node.Nodes.Add(node2);
+					oulog("node" + node);
+					oulog("" + node2);
+				}
 			}
 
 
+			 
+		
+
 		}
+
 		private void BtCreate_Click(object sender, EventArgs e)
 		{
 
 			oulog("添加节点");
-			i1 = Convert.ToInt32(tbi1.Text);  //父节点
-			i2 = Convert.ToInt32(tbi2.Text);
 
-			for (int i = 0; i < i1; i++)
+			String  s = tbi1.Text.ToString();
+			String s2 = tbi2.Text.ToString();
+			oulog(""+s+"-------"+s2);
+			if (s.Equals(null))
 			{
-				TreeNode node = tvXml.Nodes.Add("父节点" + (i + 1).ToString());
-				oulog("添加父节点 :");
-				for (int j = 0; j < i2; j++)
+				MessageBox.Show("请忽输入非法值");
+			}
+			else
+			{
+				i1 = Convert.ToInt32(tbi1.Text);  //父节点
+				i2 = Convert.ToInt32(tbi2.Text);
+
+				for (int i = 0; i < i1; i++)
 				{
-					TreeNode node2 = new TreeNode("子节点" + (i + 1).ToString());
-					node.Nodes.Add(node2);
+					TreeNode node = tvXml.Nodes.Add("父节点" + (i + 1).ToString());
+					oulog("添加父节点 :");
+					for (int j = 0; j < i2; j++)
+					{
+						TreeNode node2 = new TreeNode("子节点" + (i + 1).ToString());
+						node.Nodes.Add(node2);
+					}
 				}
+			
 
 			}
 
@@ -116,10 +146,10 @@ namespace test_xml
 				
 			
 				oulog(i + "Value======" + reader.Value);
-				//oulog(reader.TokenType + "\t\t" + reader.ValueType + "\t\t" + reader.Value);
+				
 			}
 		}
-		
+		//直接解析值
 		private void JOTest()
 		{
 			
@@ -134,7 +164,6 @@ namespace test_xml
 			
 
 		}
-
 
 		//只允许输入数字
 		private void Tbi2_KeyPress(object sender, KeyPressEventArgs e)
