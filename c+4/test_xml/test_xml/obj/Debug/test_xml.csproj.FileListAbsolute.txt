@@ -17,3 +17,4 @@ F:\Git_Hub\c+4\test_xml\test_xml\obj\Debug\test_xml.Properties.Resources.resourc
 F:\Git_Hub\c+4\test_xml\test_xml\obj\Debug\test_xml.csproj.GenerateResource.Cache
 F:\Git_Hub\c+4\test_xml\test_xml\obj\Debug\test_xml.exe
 F:\Git_Hub\c+4\test_xml\test_xml\obj\Debug\test_xml.pdb
+F:\Git_Hub\c+4\test_xml\test_xml\bin\Debug\Newtonsoft.Json.dll

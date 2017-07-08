@@ -38,6 +38,8 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.btOpen = new System.Windows.Forms.Button();
+			this.butJson = new System.Windows.Forms.Button();
+			this.butWr = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// tvXml
@@ -58,7 +60,7 @@
 			// 
 			// btCllean
 			// 
-			this.btCllean.Location = new System.Drawing.Point(491, 131);
+			this.btCllean.Location = new System.Drawing.Point(491, 126);
 			this.btCllean.Name = "btCllean";
 			this.btCllean.Size = new System.Drawing.Size(75, 23);
 			this.btCllean.TabIndex = 3;
@@ -79,7 +81,7 @@
 			this.txlog.Location = new System.Drawing.Point(1, 351);
 			this.txlog.Multiline = true;
 			this.txlog.Name = "txlog";
-			this.txlog.Size = new System.Drawing.Size(327, 158);
+			this.txlog.Size = new System.Drawing.Size(919, 171);
 			this.txlog.TabIndex = 5;
 			// 
 			// tbi1
@@ -123,11 +125,31 @@
 			this.btOpen.Text = "打开";
 			this.btOpen.UseVisualStyleBackColor = true;
 			// 
+			// butJson
+			// 
+			this.butJson.Location = new System.Drawing.Point(349, 102);
+			this.butJson.Name = "butJson";
+			this.butJson.Size = new System.Drawing.Size(75, 23);
+			this.butJson.TabIndex = 12;
+			this.butJson.Text = "打开JSON";
+			this.butJson.UseVisualStyleBackColor = true;
+			// 
+			// butWr
+			// 
+			this.butWr.Location = new System.Drawing.Point(349, 151);
+			this.butWr.Name = "butWr";
+			this.butWr.Size = new System.Drawing.Size(75, 23);
+			this.butWr.TabIndex = 13;
+			this.butWr.Text = "写json";
+			this.butWr.UseVisualStyleBackColor = true;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(578, 509);
+			this.ClientSize = new System.Drawing.Size(923, 522);
+			this.Controls.Add(this.butWr);
+			this.Controls.Add(this.butJson);
 			this.Controls.Add(this.btOpen);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
@@ -156,6 +178,8 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btOpen;
+		private System.Windows.Forms.Button butJson;
+		private System.Windows.Forms.Button butWr;
 	}
 }
 

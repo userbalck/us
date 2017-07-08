@@ -102,11 +102,11 @@ namespace WindowsFormsApp1
 			jo.Remove("addr");
 			string str = $".{title}..\r\n.";
 			str = @"
-{
-    book:{
-        title :""title string""
-    }
-}
+			{
+				 book:{
+					 title :""title string""
+					 }
+				}
 ";
 		}
 	}
