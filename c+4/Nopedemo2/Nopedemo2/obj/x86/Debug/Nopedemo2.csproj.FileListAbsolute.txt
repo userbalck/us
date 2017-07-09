@@ -70,3 +70,16 @@ F:\Svn目录\搬砖-项目\c+4项目\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2
 F:\Svn目录\搬砖-项目\c+4项目\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.pdb
 E:\目录\项目\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.Noperepl.resources
 F:\Svn目录\搬砖-项目\c+4项目\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.Noperepl.resources
+D:\us\c+4\Nopedemo2\Nopedemo2\bin\Debug\Nopedemo2.exe.config
+D:\us\c+4\Nopedemo2\Nopedemo2\bin\Debug\Nopedemo2.exe
+D:\us\c+4\Nopedemo2\Nopedemo2\bin\Debug\Nopedemo2.pdb
+D:\us\c+4\Nopedemo2\Nopedemo2\bin\Debug\log4net.dll
+D:\us\c+4\Nopedemo2\Nopedemo2\bin\Debug\log4net.xml
+D:\us\c+4\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.csprojResolveAssemblyReference.cache
+D:\us\c+4\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.Nope.resources
+D:\us\c+4\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.fmFind.resources
+D:\us\c+4\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.Noperepl.resources
+D:\us\c+4\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.Properties.Resources.resources
+D:\us\c+4\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.csproj.GenerateResource.Cache
+D:\us\c+4\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.exe
+D:\us\c+4\Nopedemo2\Nopedemo2\obj\x86\Debug\Nopedemo2.pdb

@@ -40,6 +40,7 @@
 			this.btOpen = new System.Windows.Forms.Button();
 			this.butJson = new System.Windows.Forms.Button();
 			this.butWr = new System.Windows.Forms.Button();
+			this.butSava = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// tvXml
@@ -51,7 +52,7 @@
 			// 
 			// btCreate
 			// 
-			this.btCreate.Location = new System.Drawing.Point(491, 48);
+			this.btCreate.Location = new System.Drawing.Point(450, 144);
 			this.btCreate.Name = "btCreate";
 			this.btCreate.Size = new System.Drawing.Size(75, 23);
 			this.btCreate.TabIndex = 2;
@@ -60,7 +61,7 @@
 			// 
 			// btCllean
 			// 
-			this.btCllean.Location = new System.Drawing.Point(491, 126);
+			this.btCllean.Location = new System.Drawing.Point(450, 222);
 			this.btCllean.Name = "btCllean";
 			this.btCllean.Size = new System.Drawing.Size(75, 23);
 			this.btCllean.TabIndex = 3;
@@ -69,7 +70,7 @@
 			// 
 			// btDelet
 			// 
-			this.btDelet.Location = new System.Drawing.Point(491, 88);
+			this.btDelet.Location = new System.Drawing.Point(450, 184);
 			this.btDelet.Name = "btDelet";
 			this.btDelet.Size = new System.Drawing.Size(75, 23);
 			this.btDelet.TabIndex = 4;
@@ -81,7 +82,7 @@
 			this.txlog.Location = new System.Drawing.Point(1, 351);
 			this.txlog.Multiline = true;
 			this.txlog.Name = "txlog";
-			this.txlog.Size = new System.Drawing.Size(919, 171);
+			this.txlog.Size = new System.Drawing.Size(526, 171);
 			this.txlog.TabIndex = 5;
 			// 
 			// tbi1
@@ -118,7 +119,7 @@
 			// 
 			// btOpen
 			// 
-			this.btOpen.Location = new System.Drawing.Point(491, 8);
+			this.btOpen.Location = new System.Drawing.Point(450, 104);
 			this.btOpen.Name = "btOpen";
 			this.btOpen.Size = new System.Drawing.Size(75, 23);
 			this.btOpen.TabIndex = 11;
@@ -127,7 +128,7 @@
 			// 
 			// butJson
 			// 
-			this.butJson.Location = new System.Drawing.Point(349, 102);
+			this.butJson.Location = new System.Drawing.Point(349, 104);
 			this.butJson.Name = "butJson";
 			this.butJson.Size = new System.Drawing.Size(75, 23);
 			this.butJson.TabIndex = 12;
@@ -136,18 +137,28 @@
 			// 
 			// butWr
 			// 
-			this.butWr.Location = new System.Drawing.Point(349, 151);
+			this.butWr.Location = new System.Drawing.Point(349, 144);
 			this.butWr.Name = "butWr";
 			this.butWr.Size = new System.Drawing.Size(75, 23);
 			this.butWr.TabIndex = 13;
 			this.butWr.Text = "写json";
 			this.butWr.UseVisualStyleBackColor = true;
 			// 
+			// butSava
+			// 
+			this.butSava.Location = new System.Drawing.Point(349, 183);
+			this.butSava.Name = "butSava";
+			this.butSava.Size = new System.Drawing.Size(75, 23);
+			this.butSava.TabIndex = 14;
+			this.butSava.Text = "保存";
+			this.butSava.UseVisualStyleBackColor = true;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(923, 522);
+			this.ClientSize = new System.Drawing.Size(539, 522);
+			this.Controls.Add(this.butSava);
 			this.Controls.Add(this.butWr);
 			this.Controls.Add(this.butJson);
 			this.Controls.Add(this.btOpen);
@@ -180,6 +191,7 @@
 		private System.Windows.Forms.Button btOpen;
 		private System.Windows.Forms.Button butJson;
 		private System.Windows.Forms.Button butWr;
+		private System.Windows.Forms.Button butSava;
 	}
 }
 

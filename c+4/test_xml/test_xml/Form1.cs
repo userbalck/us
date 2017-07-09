@@ -19,6 +19,7 @@ namespace test_xml
 		String stPath;
 		int i1;
 		int i2;
+		string jsonText;
 
 		public Form1()
 		{
@@ -29,16 +30,41 @@ namespace test_xml
 			tbi2.KeyPress += Tbi2_KeyPress;
 			butJson.Click += ButJson_Click;
 			butWr.Click += ButWr_Click;
+			butSava.Click += ButSava_Click;
+		}
+		//保存
+		private void ButSava_Click(object sender, EventArgs e)
+		{
+			SaveFileDialog sfd = new SaveFileDialog();
+			sfd.Filter = "文本文件(*.json) | *.json | 所有文件(*.xml) | *.xml";
+			
+			
+			
+			if (sfd.ShowDialog()==DialogResult.OK)
+			{
+				string stpath = sfd.FileName;
+				oulog("stpath======" + stpath);
+				StreamWriter writer = new StreamWriter(stpath,false,Encoding.Unicode);
+				string stWr = tvXml.ToString();
+				oulog(""+ jsonText);
+				writer.Write(jsonText);
+				writer.Close();
+			}
+			else
+			{
+
+			}
+		
+
+
+			
 		}
 
+
+		//写入json
 		private void ButWr_Click(object sender, EventArgs e)
 		{
-			jsWr();
-		}
-
-		//写json
-		public void jsWr()
-		{
+	
 			StringWriter sw = new StringWriter();
 			JsonWriter writer = new JsonTextWriter(sw);
 			String iput = "knoljdas";
@@ -51,7 +77,7 @@ namespace test_xml
 			writer.WriteEndObject();
 			writer.Flush();
 
-			string jsonText = sw.GetStringBuilder().ToString();
+			 jsonText = sw.GetStringBuilder().ToString();
 			oulog("1111" + jsonText);
 			Console.WriteLine(jsonText);
 		}
@@ -100,23 +126,19 @@ namespace test_xml
 
 		}
 
+		//生成节点
 		private void BtCreate_Click(object sender, EventArgs e)
 		{
-
+			tvXml.Nodes.Clear();
 			oulog("添加节点");
 
 			String  s = tbi1.Text.ToString();
 			String s2 = tbi2.Text.ToString();
 			oulog(""+s+"-------"+s2);
-			if (s.Equals(null))
-			{
-				MessageBox.Show("请忽输入非法值");
-			}
-			else
+			if (s!="")
 			{
 				i1 = Convert.ToInt32(tbi1.Text);  //父节点
 				i2 = Convert.ToInt32(tbi2.Text);
-
 				for (int i = 0; i < i1; i++)
 				{
 					TreeNode node = tvXml.Nodes.Add("父节点" + (i + 1).ToString());
@@ -127,8 +149,11 @@ namespace test_xml
 						node.Nodes.Add(node2);
 					}
 				}
-			
 
+			}
+			else
+			{
+				MessageBox.Show("请乎输入非法值");
 			}
 
 
