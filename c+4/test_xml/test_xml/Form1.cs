@@ -37,34 +37,27 @@ namespace test_xml
 		{
 			SaveFileDialog sfd = new SaveFileDialog();
 			sfd.Filter = "文本文件(*.json) | *.json | 所有文件(*.xml) | *.xml";
-			
-			
-			
-			if (sfd.ShowDialog()==DialogResult.OK)
+
+
+
+			if (sfd.ShowDialog() == DialogResult.OK)
 			{
 				string stpath = sfd.FileName;
 				oulog("stpath======" + stpath);
-				StreamWriter writer = new StreamWriter(stpath,false,Encoding.Unicode);
+				StreamWriter writer = new StreamWriter(stpath, false, Encoding.Unicode);
 				string stWr = tvXml.ToString();
-				oulog(""+ jsonText);
+				oulog("" + jsonText);
 				writer.Write(jsonText);
 				writer.Close();
 			}
-			else
-			{
 
-			}
-		
-
-
-			
 		}
 
 
 		//写入json
 		private void ButWr_Click(object sender, EventArgs e)
 		{
-	
+
 			StringWriter sw = new StringWriter();
 			JsonWriter writer = new JsonTextWriter(sw);
 			String iput = "knoljdas";
@@ -77,7 +70,7 @@ namespace test_xml
 			writer.WriteEndObject();
 			writer.Flush();
 
-			 jsonText = sw.GetStringBuilder().ToString();
+			jsonText = sw.GetStringBuilder().ToString();
 			oulog("1111" + jsonText);
 			Console.WriteLine(jsonText);
 		}
@@ -85,11 +78,60 @@ namespace test_xml
 		private void ButJson_Click(object sender, EventArgs e)
 		{
 
-			JsTest();
+				//	JsTest();
 			//JOTest();
 			//JoTest2();
+			//jsText3();
+			jstTest4();
 
 
+
+		}
+
+		private void jstTest4()
+		{
+			string jsonText = "{'name':'test','phone':'18888888888','image':[{'name':'img1','data':'data1'},{'name':'img2','data':'data2'},{'name':'img3','data':'data3'}]}";
+
+			JObject jo = (JObject)JsonConvert.DeserializeObject(jsonText);
+			oulog("jo===="+jo);
+			JArray jar = JArray.Parse(jo["image"].ToString());
+			for (int i = 0; i < jar.Count; i++)
+			{
+
+				JObject j = JObject.Parse(jar[i].ToString());
+				oulog("j==="+j);
+				oulog("v"+j.Values());
+
+
+				//	TreeNode node = tvXml.Nodes.Add(property1.Name.ToString());
+				//TreeNode node2 = new TreeNode(property1.Value.ToString());
+				//node.Nodes.Add(node2);
+			}
+		
+		}
+
+		private void jsText3()
+		{
+			string jsonText = "{'name':'test','phone':'18888888888','image':[{'name':'img1','data':'data1'},{'name':'img2','data':'data2'},{'name':'img3','data':'data3'}]}";
+
+			JObject jo = (JObject)JsonConvert.DeserializeObject(jsonText);
+			
+			JArray jar = JArray.Parse(jo["image"].ToString());
+
+			for (var i = 0; i < jar.Count; i++)
+
+			{
+				string zone = jo["name"].ToString();
+
+				string zone_en = jo["phone"].ToString();
+				MessageBox.Show(zone);
+				MessageBox.Show(zone_en);
+
+				JObject j = JObject.Parse(jar[i].ToString());
+				MessageBox.Show(j["name"].ToString());
+				MessageBox.Show(j["data"].ToString());
+				
+			}
 		}
 		//打开json并解析树
 		public void JsTest()
@@ -97,11 +139,12 @@ namespace test_xml
 			tvXml.Nodes.Clear();
 			String test_json = null;
 			OpenFileDialog ofd = new OpenFileDialog();
-			if (ofd.ShowDialog()==DialogResult.OK)
+			if (ofd.ShowDialog() == DialogResult.OK)
 			{
-				String path=ofd.FileName;
-				oulog("luj==="+path);
-				StreamReader sr = new StreamReader(ofd.FileName,Encoding.Default);
+				String path = ofd.FileName;
+				oulog("luj===" + path);
+				//读取json
+				StreamReader sr = new StreamReader(ofd.FileName, Encoding.Default);
 				test_json = sr.ReadToEnd();
 				sr.Close();
 				oulog("var va==" + test_json);
@@ -121,8 +164,8 @@ namespace test_xml
 			}
 
 
-			 
-		
+
+
 
 		}
 
@@ -132,10 +175,10 @@ namespace test_xml
 			tvXml.Nodes.Clear();
 			oulog("添加节点");
 
-			String  s = tbi1.Text.ToString();
+			String s = tbi1.Text.ToString();
 			String s2 = tbi2.Text.ToString();
-			oulog(""+s+"-------"+s2);
-			if (s!="")
+			oulog("" + s + "-------" + s2);
+			if (s != "")
 			{
 				i1 = Convert.ToInt32(tbi1.Text);  //父节点
 				i2 = Convert.ToInt32(tbi2.Text);
@@ -158,35 +201,35 @@ namespace test_xml
 
 
 		}
-			//读
-			private void JoTest2()
+		//读
+		private void JoTest2()
 		{
 			string jsonText2 = @"{""input"" : ""value"", ""output"" : ""result""}";
-			 jsonText2= @"{""input"" : ""value"", ""output"" : ""result""}";
+			jsonText2 = @"{""input"" : ""value"", ""output"" : ""result""}";
 			JsonReader reader = new JsonTextReader(new System.IO.StringReader(jsonText2));
 			int i = 0;
 			while (reader.Read())
 			{
 				i++;
-				
-			
+
+
 				oulog(i + "Value======" + reader.Value);
-				
+
 			}
 		}
 		//直接解析值
 		private void JOTest()
 		{
-			
+
 			string jsonText = @"{""input"" : ""value"", ""output"" : ""result""}";
 			JObject obj = JObject.Parse("{\"h\":\"Hello world!!!\"}");
-			string jsH=((string)obj["h"]);
+			string jsH = ((string)obj["h"]);
 			oulog("H===" + jsH);
 
 			JObject jobj2 = JObject.Parse(jsonText);
-			jsH= ((string)jobj2["input"]);
+			jsH = ((string)jobj2["input"]);
 			oulog("H===" + jsH);
-			
+
 
 		}
 
@@ -218,12 +261,12 @@ namespace test_xml
 			{
 				stPath = ofd.FileName;
 				//xmldode();
-				
-				
+
+
 			}
-			
+
 		}
-		
+
 
 
 
@@ -242,21 +285,16 @@ namespace test_xml
 
 
 
-		
+
 
 
 
 		//添加日志
 		private void oulog(string log)
 		{
+			//添加日
+			txlog.AppendText($"[{DateTime.Now.ToString("HH:mm:ss")}] {log}\r\n");
 
-			
-			
-				//添加日
-				txlog.AppendText($"[{DateTime.Now.ToString("HH:mm:ss")}] {log}\r\n");
-
-
-			
 		}
 	}
 

@@ -27,3 +27,4 @@ D:\us\c+4\test_xml\test_xml\obj\Debug\test_xml.Properties.Resources.resources
 D:\us\c+4\test_xml\test_xml\obj\Debug\test_xml.csproj.GenerateResource.Cache
 D:\us\c+4\test_xml\test_xml\obj\Debug\test_xml.exe
 D:\us\c+4\test_xml\test_xml\obj\Debug\test_xml.pdb
+D:\us\c+4\test_xml\test_xml\bin\Debug\Newtonsoft.Json.dll
