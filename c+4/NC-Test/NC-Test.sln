@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NC-Test", "NC-Test\NC-Test.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nc-TestNew", "Nc-TestNew\Nc-TestNew.csproj", "{880AE90B-87B7-4B91-85B9-9A7A14EAF1A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N9MTest.SDK", "N9MTest.SDK.csproj", "{D5E848A7-8D89-4086-84A6-DAEA6D50DF5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{880AE90B-87B7-4B91-85B9-9A7A14EAF1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{880AE90B-87B7-4B91-85B9-9A7A14EAF1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{880AE90B-87B7-4B91-85B9-9A7A14EAF1A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5E848A7-8D89-4086-84A6-DAEA6D50DF5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5E848A7-8D89-4086-84A6-DAEA6D50DF5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5E848A7-8D89-4086-84A6-DAEA6D50DF5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5E848A7-8D89-4086-84A6-DAEA6D50DF5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
