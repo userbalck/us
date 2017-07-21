@@ -41,6 +41,7 @@
 			this.butJson = new System.Windows.Forms.Button();
 			this.butWr = new System.Windows.Forms.Button();
 			this.butSava = new System.Windows.Forms.Button();
+			this.btXML = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// tvXml
@@ -128,7 +129,7 @@
 			// 
 			// butJson
 			// 
-			this.butJson.Location = new System.Drawing.Point(349, 104);
+			this.butJson.Location = new System.Drawing.Point(349, 144);
 			this.butJson.Name = "butJson";
 			this.butJson.Size = new System.Drawing.Size(75, 23);
 			this.butJson.TabIndex = 12;
@@ -137,7 +138,7 @@
 			// 
 			// butWr
 			// 
-			this.butWr.Location = new System.Drawing.Point(349, 144);
+			this.butWr.Location = new System.Drawing.Point(349, 184);
 			this.butWr.Name = "butWr";
 			this.butWr.Size = new System.Drawing.Size(75, 23);
 			this.butWr.TabIndex = 13;
@@ -146,18 +147,28 @@
 			// 
 			// butSava
 			// 
-			this.butSava.Location = new System.Drawing.Point(349, 183);
+			this.butSava.Location = new System.Drawing.Point(349, 222);
 			this.butSava.Name = "butSava";
 			this.butSava.Size = new System.Drawing.Size(75, 23);
 			this.butSava.TabIndex = 14;
 			this.butSava.Text = "保存";
 			this.butSava.UseVisualStyleBackColor = true;
 			// 
+			// btXML
+			// 
+			this.btXML.Location = new System.Drawing.Point(347, 104);
+			this.btXML.Name = "btXML";
+			this.btXML.Size = new System.Drawing.Size(75, 23);
+			this.btXML.TabIndex = 15;
+			this.btXML.Text = "打开XML";
+			this.btXML.UseVisualStyleBackColor = true;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(539, 522);
+			this.Controls.Add(this.btXML);
 			this.Controls.Add(this.butSava);
 			this.Controls.Add(this.butWr);
 			this.Controls.Add(this.butJson);
@@ -192,6 +203,7 @@
 		private System.Windows.Forms.Button butJson;
 		private System.Windows.Forms.Button butWr;
 		private System.Windows.Forms.Button butSava;
+		private System.Windows.Forms.Button btXML;
 	}
 }
 

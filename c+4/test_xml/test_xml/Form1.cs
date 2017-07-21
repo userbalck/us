@@ -31,7 +31,11 @@ namespace test_xml
 			butJson.Click += ButJson_Click;
 			butWr.Click += ButWr_Click;
 			butSava.Click += ButSava_Click;
+			btXML.Click += BtXML_Click;
 		}
+
+
+
 		//保存
 		private void ButSava_Click(object sender, EventArgs e)
 		{
@@ -78,7 +82,7 @@ namespace test_xml
 		private void ButJson_Click(object sender, EventArgs e)
 		{
 
-				//	JsTest();
+			//	JsTest();
 			//JOTest();
 			//JoTest2();
 			//jsText3();
@@ -93,21 +97,21 @@ namespace test_xml
 			string jsonText = "{'name':'test','phone':'18888888888','image':[{'name':'img1','data':'data1'},{'name':'img2','data':'data2'},{'name':'img3','data':'data3'}]}";
 
 			JObject jo = (JObject)JsonConvert.DeserializeObject(jsonText);
-			oulog("jo===="+jo);
+			oulog("jo====" + jo);
 			JArray jar = JArray.Parse(jo["image"].ToString());
 			for (int i = 0; i < jar.Count; i++)
 			{
 
 				JObject j = JObject.Parse(jar[i].ToString());
-				oulog("j==="+j);
-				oulog("v"+j.Values());
+				oulog("j===" + j);
+				oulog("v" + j.Values());
 
 
 				//	TreeNode node = tvXml.Nodes.Add(property1.Name.ToString());
 				//TreeNode node2 = new TreeNode(property1.Value.ToString());
 				//node.Nodes.Add(node2);
 			}
-		
+
 		}
 
 		private void jsText3()
@@ -115,7 +119,7 @@ namespace test_xml
 			string jsonText = "{'name':'test','phone':'18888888888','image':[{'name':'img1','data':'data1'},{'name':'img2','data':'data2'},{'name':'img3','data':'data3'}]}";
 
 			JObject jo = (JObject)JsonConvert.DeserializeObject(jsonText);
-			
+
 			JArray jar = JArray.Parse(jo["image"].ToString());
 
 			for (var i = 0; i < jar.Count; i++)
@@ -130,7 +134,7 @@ namespace test_xml
 				JObject j = JObject.Parse(jar[i].ToString());
 				MessageBox.Show(j["name"].ToString());
 				MessageBox.Show(j["data"].ToString());
-				
+
 			}
 		}
 		//打开json并解析树
@@ -254,7 +258,7 @@ namespace test_xml
 		private void BtOpen_Click(object sender, EventArgs e)
 		{
 			oulog("打开文件");
-			JsTest();
+			//JsTest();
 			OpenFileDialog ofd = new OpenFileDialog();
 
 			if (ofd.ShowDialog() == DialogResult.OK)
@@ -266,27 +270,31 @@ namespace test_xml
 			}
 
 		}
+		//解析xml
 
-
-
+		private void BtXML_Click(object sender, EventArgs e)
+		{
+			xmldode();
+		}
 
 		//xml -解析
 		private void xmldode()
 		{
 			XmlDocument doc = new XmlDocument();
-			doc.Load(stPath);
-			XmlNode xn = doc.SelectSingleNode("bookstore");
-			XmlNodeList xnl = xn.ChildNodes;
-			foreach (XmlNode xml in xnl)
+			String stpa = "XMLFile1.xml";  //解析当前目录xml文件
+			doc.Load(stpa);
+			XmlNodeList list = doc.SelectNodes("bookstore/nihao	/title");
+			
+			foreach (XmlNode node in list)
 			{
-
+				oulog(node.Name + ":" + node.InnerText);
+				/***
+				 *输出为元素+实例
+				 * 
+				 * **/
 			}
+
 		}
-
-
-
-
-
 
 
 		//添加日志
