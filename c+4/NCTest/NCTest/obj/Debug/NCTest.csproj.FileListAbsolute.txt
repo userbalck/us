@@ -1,0 +1,15 @@
+F:\us\c+4\NCTest\NCTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+F:\us\c+4\NCTest\NCTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+F:\us\c+4\NCTest\NCTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+F:\us\c+4\NCTest\NCTest\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+F:\us\c+4\NCTest\NCTest\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+F:\us\c+4\NCTest\NCTest\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+F:\us\c+4\NCTest\NCTest\bin\Debug\NCTest.dll
+F:\us\c+4\NCTest\NCTest\bin\Debug\NCTest.pdb
+F:\us\c+4\NCTest\NCTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+F:\us\c+4\NCTest\NCTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+F:\us\c+4\NCTest\NCTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+F:\us\c+4\NCTest\NCTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+F:\us\c+4\NCTest\NCTest\obj\Debug\NCTest.csprojResolveAssemblyReference.cache
+F:\us\c+4\NCTest\NCTest\obj\Debug\NCTest.dll
+F:\us\c+4\NCTest\NCTest\obj\Debug\NCTest.pdb

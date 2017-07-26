@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nc>
+  <pre>
+    <IPs>192.168.20.50</IPs>
+    <port>9006</port>
+    <username>admin</username>
+    <password>120223</password>
+  </pre>
+</nc>
