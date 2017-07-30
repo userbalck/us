@@ -79,9 +79,10 @@ namespace TCPTest
 		private void ButSTATR_Click(object sender, EventArgs e)
 		{
 			//tcpClien = new TcpClient(hostip,5252);
+			long lgs = 15454.4564;
 			logs("ip"+hostip);
-			long host ='192.168.20.61';
-			//long host = Convert.ToInt64(hostip);
+			//long  host ='192.168.20.61';
+			 long host = Convert.ToInt64(hostip);
 			tcplistener = new TcpListener(new System.Net.IPEndPoint(host, 5252));
 			tcplistener.Start();
 			stateLab.Text = "服务启动";
