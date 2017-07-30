@@ -29,11 +29,11 @@
 		private void InitializeComponent()
 		{
 			this.butset = new System.Windows.Forms.Button();
-			this.textGET = new System.Windows.Forms.TextBox();
+			this.getsetver = new System.Windows.Forms.TextBox();
 			this.butSTATR = new System.Windows.Forms.Button();
 			this.StopServer = new System.Windows.Forms.Button();
 			this.tbClik = new System.Windows.Forms.TextBox();
-			this.tbtext = new System.Windows.Forms.TextBox();
+			this.setServer = new System.Windows.Forms.TextBox();
 			this.portText = new System.Windows.Forms.TextBox();
 			this.labPort = new System.Windows.Forms.Label();
 			this.labIP = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
 			this.clikbtt = new System.Windows.Forms.Button();
 			this.tblogs = new System.Windows.Forms.TextBox();
 			this.stateLab = new System.Windows.Forms.Label();
+			this.stopclik = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// butset
@@ -58,13 +59,13 @@
 			this.butset.Text = "发送";
 			this.butset.UseVisualStyleBackColor = true;
 			// 
-			// textGET
+			// getsetver
 			// 
-			this.textGET.Location = new System.Drawing.Point(0, 263);
-			this.textGET.Multiline = true;
-			this.textGET.Name = "textGET";
-			this.textGET.Size = new System.Drawing.Size(225, 195);
-			this.textGET.TabIndex = 2;
+			this.getsetver.Location = new System.Drawing.Point(0, 263);
+			this.getsetver.Multiline = true;
+			this.getsetver.Name = "getsetver";
+			this.getsetver.Size = new System.Drawing.Size(225, 195);
+			this.getsetver.TabIndex = 2;
 			// 
 			// butSTATR
 			// 
@@ -89,16 +90,16 @@
 			this.tbClik.Location = new System.Drawing.Point(524, 117);
 			this.tbClik.Multiline = true;
 			this.tbClik.Name = "tbClik";
-			this.tbClik.Size = new System.Drawing.Size(360, 123);
+			this.tbClik.Size = new System.Drawing.Size(360, 111);
 			this.tbClik.TabIndex = 5;
 			// 
-			// tbtext
+			// setServer
 			// 
-			this.tbtext.Location = new System.Drawing.Point(0, 135);
-			this.tbtext.Multiline = true;
-			this.tbtext.Name = "tbtext";
-			this.tbtext.Size = new System.Drawing.Size(225, 48);
-			this.tbtext.TabIndex = 6;
+			this.setServer.Location = new System.Drawing.Point(0, 135);
+			this.setServer.Multiline = true;
+			this.setServer.Name = "setServer";
+			this.setServer.Size = new System.Drawing.Size(225, 48);
+			this.setServer.TabIndex = 6;
 			// 
 			// portText
 			// 
@@ -212,11 +213,21 @@
 			this.stateLab.Size = new System.Drawing.Size(0, 12);
 			this.stateLab.TabIndex = 21;
 			// 
+			// stopclik
+			// 
+			this.stopclik.Location = new System.Drawing.Point(716, 75);
+			this.stopclik.Name = "stopclik";
+			this.stopclik.Size = new System.Drawing.Size(75, 23);
+			this.stopclik.TabIndex = 22;
+			this.stopclik.Text = "关闭客户端";
+			this.stopclik.UseVisualStyleBackColor = true;
+			// 
 			// clikBt
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(915, 463);
+			this.Controls.Add(this.stopclik);
 			this.Controls.Add(this.stateLab);
 			this.Controls.Add(this.tblogs);
 			this.Controls.Add(this.clikbtt);
@@ -230,11 +241,11 @@
 			this.Controls.Add(this.labIP);
 			this.Controls.Add(this.labPort);
 			this.Controls.Add(this.portText);
-			this.Controls.Add(this.tbtext);
+			this.Controls.Add(this.setServer);
 			this.Controls.Add(this.tbClik);
 			this.Controls.Add(this.StopServer);
 			this.Controls.Add(this.butSTATR);
-			this.Controls.Add(this.textGET);
+			this.Controls.Add(this.getsetver);
 			this.Controls.Add(this.butset);
 			this.Name = "clikBt";
 			this.Text = "Form1";
@@ -245,11 +256,11 @@
 
 		#endregion
 		private System.Windows.Forms.Button butset;
-		private System.Windows.Forms.TextBox textGET;
+		private System.Windows.Forms.TextBox getsetver;
 		private System.Windows.Forms.Button butSTATR;
 		private System.Windows.Forms.Button StopServer;
 		private System.Windows.Forms.TextBox tbClik;
-		private System.Windows.Forms.TextBox tbtext;
+		private System.Windows.Forms.TextBox setServer;
 		private System.Windows.Forms.TextBox portText;
 		private System.Windows.Forms.Label labPort;
 		private System.Windows.Forms.Label labIP;
@@ -263,6 +274,7 @@
 		private System.Windows.Forms.Button clikbtt;
 		private System.Windows.Forms.TextBox tblogs;
 		private System.Windows.Forms.Label stateLab;
+		private System.Windows.Forms.Button stopclik;
 	}
 }
 
