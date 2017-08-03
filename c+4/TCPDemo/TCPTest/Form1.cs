@@ -28,7 +28,7 @@ namespace TCPTest
 		NetworkStream sendStream;
 		TcpClient client;
 		string hostip;
-	
+		String receiveString;
 		public clikBt()
 		{
 			InitializeComponent();
@@ -63,13 +63,31 @@ namespace TCPTest
 		//发送消息
 		private void SettClit_Click(object sender, EventArgs e)
 		{
-			st = "jklsadflk";
+			Socket sock;
+			st = "123456";
 			st = tbClik.Text;
 			logs("发送到服务端"+st);
 			sendStream = client.GetStream();
-			Byte[] sendBytes = Encoding.Default.GetBytes(st);
-			sendStream.Write(sendBytes, 0, sendBytes.Length);
-			sendStream.Flush();
+			if (sendStream.CanWrite)
+			{
+				Byte[] sendBytes = Encoding.Default.GetBytes(st);
+				sendStream.Write(sendBytes, 0, sendBytes.Length);
+				sendStream.Flush();
+				sendStream.Close();//关闭网络流  
+				//client.Close();//关闭客户端  
+
+			}
+			else
+			{
+				MessageBox.Show("无法写入数据流");
+
+				sendStream.Close();
+				client.Close();
+
+				return;
+			}
+
+
 		}
 
 		//客户端
@@ -109,6 +127,7 @@ namespace TCPTest
 			stateLab.Text = "服务启动";
 			logs("start====服务启动" + hostip + portText.Text);
 			Thread t = new Thread(thTCP);
+			t.Start();
 
 
 
@@ -116,22 +135,24 @@ namespace TCPTest
 		//收数据线程
 		public void thTCP()
 		{
+			CheckForIllegalCrossThreadCalls = false;
 			while (true)
 			{
+				logs("while-true");
 				tcpClien = tcplistener.AcceptTcpClient();
 				byte[] buffer = new byte[tcpClien.ReceiveBufferSize];
 				NetworkStream network = tcpClien.GetStream();   //获取网络流
 				network.Read(buffer, 0, buffer.Length);  //获取流的总大小
 				network.Close();
 				tcpClien.Close();
-				String receiveString = Encoding.Default.GetString(buffer).Trim('\0');//转换成字符串 
+				receiveString = Encoding.Default.GetString(buffer).Trim('\0');//转换成字符串 
 				getsetver.Text = receiveString;
-				logs("while数据" + receiveString);
+				//logs("while数据" + receiveString);
 			}
+			
 		}
 		public void logs(string log)
 		{
-
 
 			tblogs.AppendText($"[{DateTime.Now.ToString("HH:mm:ss")}] {log}\r\n");
 		}
