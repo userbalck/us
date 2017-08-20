@@ -153,7 +153,6 @@ namespace TCPTest
 		}
 		public void logs(string log)
 		{
-
 			tblogs.AppendText($"[{DateTime.Now.ToString("HH:mm:ss")}] {log}\r\n");
 		}
 
