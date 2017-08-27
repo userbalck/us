@@ -64,7 +64,7 @@ namespace TcpClik
 		{
 			senStren.Close();
 		}
-
+		//启动客户端
 		private void StartClik_Click(object sender, EventArgs e)
 		{
 			string strHostName = Dns.GetHostName(); //得到本机的主机名

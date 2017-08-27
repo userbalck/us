@@ -29,6 +29,8 @@ namespace TCPTest
 		TcpClient client;
 		string hostip;
 		String receiveString;
+		Thread t;
+
 		public clikBt()
 		{
 			InitializeComponent();
@@ -38,7 +40,7 @@ namespace TCPTest
 			settClit.Click += SettClit_Click;
 			StopServer.Click += StopServer_Click;
 			stopclik.Click += Stopclik_Click;
-			
+		
 			Initialization();
 		}
 		
@@ -52,13 +54,7 @@ namespace TCPTest
 			portText.Text = "5252";
 			stateLab.Text = "未启动";
 		}
-
-		private void StopServer_Click(object sender, EventArgs e)
-		{
-			tcplistener.Stop();
-			stateLab.Text = "服务器关闭";
-			logs("stop" + hostip + portText.Text);
-		}
+	
 
 		//发送消息
 		private void SettClit_Click(object sender, EventArgs e)
@@ -126,7 +122,7 @@ namespace TCPTest
 			tcplistener.Start();
 			stateLab.Text = "服务启动";
 			logs("start====服务启动" + hostip + portText.Text);
-			Thread t = new Thread(thTCP);
+			t = new Thread(thTCP);
 			t.Start();
 
 
@@ -150,6 +146,14 @@ namespace TCPTest
 				//logs("while数据" + receiveString);
 			}
 			
+		}
+
+		private void StopServer_Click(object sender, EventArgs e)
+		{
+			tcplistener.Stop();
+			
+			stateLab.Text = "服务器关闭";
+			logs("stop" + hostip + portText.Text);
 		}
 		public void logs(string log)
 		{
