@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="F:\Svn目录\搬砖-项目\c+4项目\N9MTest\bin\Debug\N9MTest.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-08-12" time="16:05:13">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5477" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\Administrator\Desktop\20170812\bin" machine-name="SKY-20161115XKA" user="Administrator" user-domain="SKY-20161115XKA" />
+  <culture-info current-culture="zh-CN" current-uiculture="zh-CN" />
+  <test-suite type="Assembly" name="F:\Svn目录\搬砖-项目\c+4项目\N9MTest\bin\Debug\N9MTest.dll" executed="True" result="Failure" success="False" time="22.851" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="N9MTest" executed="True" result="Failure" success="False" time="22.843" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Time" executed="True" result="Failure" success="False" time="22.843" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="TestCase_Timing" executed="True" result="Failure" success="False" time="22.826" asserts="0">
+                <results>
+                  <test-case name="N9MTest.Time.TestCase_Timing.TimeSyncGPS" executed="True" result="Error" success="False" time="22.473" asserts="0">
+                    <failure>
+                      <message><![CDATA[System.Net.Sockets.SocketException : 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 192.168.20.50:9006]]></message>
+                      <stack-trace><![CDATA[在 System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+在 N9MTest.SDK.net.N9MSession.Login(String username, String password) 位置 F:\Svn目录\搬砖-项目\c+4项目\N9MTest\N9MTest.SDK\net\N9MSession.cs:行号 178
+在 N9MTest.Time.TestCase_Timing.TimeSyncGPS() 位置 F:\Svn目录\搬砖-项目\c+4项目\N9MTest\N9MTest\Time\TestCase_Timing.cs:行号 263
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

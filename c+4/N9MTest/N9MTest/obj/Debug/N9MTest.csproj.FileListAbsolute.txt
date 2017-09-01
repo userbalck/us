@@ -1,0 +1,12 @@
+F:\GIT\thwu\N9MTest\bin\Debug\N9MTest.dll.config
+F:\GIT\thwu\N9MTest\bin\Debug\N9MTest.dll
+F:\GIT\thwu\N9MTest\bin\Debug\N9MTest.pdb
+F:\GIT\thwu\N9MTest\N9MTest\obj\Debug\N9MTest.csprojResolveAssemblyReference.cache
+F:\GIT\thwu\N9MTest\N9MTest\obj\Debug\N9MTest.dll
+F:\GIT\thwu\N9MTest\N9MTest\obj\Debug\N9MTest.pdb
+F:\Svn目录\搬砖-项目\c+4项目\N9MTest\bin\Debug\N9MTest.dll.config
+F:\Svn目录\搬砖-项目\c+4项目\N9MTest\bin\Debug\N9MTest.dll
+F:\Svn目录\搬砖-项目\c+4项目\N9MTest\bin\Debug\N9MTest.pdb
+F:\Svn目录\搬砖-项目\c+4项目\N9MTest\N9MTest\obj\Debug\N9MTest.csprojResolveAssemblyReference.cache
+F:\Svn目录\搬砖-项目\c+4项目\N9MTest\N9MTest\obj\Debug\N9MTest.dll
+F:\Svn目录\搬砖-项目\c+4项目\N9MTest\N9MTest\obj\Debug\N9MTest.pdb
