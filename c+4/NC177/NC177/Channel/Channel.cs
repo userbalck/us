@@ -12,11 +12,17 @@ namespace NC177.Channel
 		string sIP = "192.168.1.1";
 		System.Diagnostics.Process p;
 		string ncip = "nc.exe -l -s 192.168.20.61 -p 9999";
+		public string _name;
+		public string Name{
+			get { return _name; }
+			set { _name = value; }
+		}
+
 
 		[Test]
 		public void Channe()
 		{
-			
+			Name = "121";
 			ncip = "114.114.114.114";
 			Console.WriteLine("1111111111");
 			p = new System.Diagnostics.Process();

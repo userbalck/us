@@ -19,7 +19,7 @@ namespace N9MTest
         protected TestCase_Basecase()
         {
             this.fun = new FUN();
-			this.CFG = fun.xmlConfig;
+			this.CFG = fun.XMlConfig;
         }
 
         protected TModule tModule;

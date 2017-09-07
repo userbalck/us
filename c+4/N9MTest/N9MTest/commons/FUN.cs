@@ -13,7 +13,7 @@ namespace N9MTest.commons
         /// <summary>
         /// 一次性载入，之后如果xml文件内容变更将不会读取到
         /// </summary>
-        public RMXML xmlConfig
+        public RMXML XMlConfig
         {
             get
             {

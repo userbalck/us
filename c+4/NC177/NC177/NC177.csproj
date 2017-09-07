@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ANT\AntTest.cs" />
     <Compile Include="Channel\Channel.cs" />
     <Compile Include="conmons\FUN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
