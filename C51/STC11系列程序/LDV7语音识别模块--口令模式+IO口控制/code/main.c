@@ -38,7 +38,7 @@ sbit PA6=P1^5;  //.....
 sbit PA7=P1^6;  //对应板上标号 P1.6
 sbit PA8=P1^7;  //对应板上标号 P1.7
 
-
+sbit LED0=P1^0;			//定义端口
 /***********************************************************
 * 名    称： void  main(void)
 * 功    能： 主函数	程序入口
@@ -218,6 +218,7 @@ void 	User_handle(uint8 dat)
 		 {
 		  	G0_flag=ENABLE;
 				LED=0;
+			PrintCom("G0_flag\r\n");
 		 }
 		 else if(ENABLE==G0_flag)
 		 {	
@@ -231,14 +232,17 @@ void 	User_handle(uint8 dat)
 													 break;
 					case CODE_KFBYZ:	 /*命令“全开”*/
 						PrintCom("“开发板验证”命令识别成功\r\n");//串口输出提示信息（可删除）
+				
 						PA2=1;//让PA2端口为高电平
 													 break;
 					case CODE_KD:		/*命令“复位”*/				
 						PrintCom("“开灯”命令识别成功\r\n"); //串口输出提示信息（可删除）
+						LED0=0;  //0灯开 ，低电平 ,P1.0
 						PA3=1;//让PA3端口为高电平 
 													break;
 					case CODE_GD:		/*命令“复位”*/				
 						PrintCom("“关灯”命令识别成功\r\n"); //串口输出提示信息（可删除）
+						LEDO=1; //高电平，关灯
 						PA3=0;//让PA3端口为低电平
 													break;
 					case CODE_BJ:		/*命令“复位”*/				

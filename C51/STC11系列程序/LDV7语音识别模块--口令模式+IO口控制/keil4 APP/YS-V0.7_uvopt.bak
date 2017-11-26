@@ -118,6 +118,38 @@
         <tIfile></tIfile>
         <pMon></pMon>
       </DebugOpt>
+      <Breakpoint>
+        <Bp>
+          <Number>0</Number>
+          <Type>0</Type>
+          <LineNumber>261</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>180</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>LDChip.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+      </Breakpoint>
       <DebugFlag>
         <trace>0</trace>
         <periodic>0</periodic>
@@ -158,12 +190,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>103</ColumnNumber>
+      <ColumnNumber>7</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>32</TopLine>
-      <CurrentLine>46</CurrentLine>
+      <TopLine>220</TopLine>
+      <CurrentLine>260</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\code\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -172,12 +204,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>2</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>69</ColumnNumber>
+      <ColumnNumber>6</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>12</CurrentLine>
+      <TopLine>335</TopLine>
+      <CurrentLine>335</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\code\LDChip.c</PathWithFileName>
       <FilenameWithoutPath>LDChip.c</FilenameWithoutPath>
@@ -211,7 +243,7 @@
       <Focus>0</Focus>
       <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>28</TopLine>
+      <TopLine>1</TopLine>
       <CurrentLine>45</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\user\usart.c</PathWithFileName>
@@ -220,7 +252,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>E:\TB店铺资料\TB文件保存\产品开发资料保存\YS-LDV7语音识别模块\YS-V0.7驱动程序\STC11系列程序\V0.7 语音识别程序：口令模式+IO口控制\CODE\CONFIG.H</PathWithFilename>
+    <PathWithFilename>D:\Tool\语音识别\YS-LDV7语音识别-配套资料V1.1(20150517)\LDV7语音识别模块-配套程序\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -246,7 +278,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\KEIL\C51\INC\INTRINS.H</PathWithFilename>
+    <PathWithFilename>D:\Tool\语音识别\YS-LDV7语音识别-配套资料V1.1(20150517)\LDV7语音识别模块-配套程序\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\STC11XX.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -272,7 +304,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\TB店铺资料\TB文件保存\产品开发资料保存\YS-LDV7语音识别模块\YS-V0.7驱动程序\STC11系列程序\V0.7 语音识别程序：口令模式+IO口控制\CODE\STC11XX.H</PathWithFilename>
+    <PathWithFilename>D:\Tool\语音识别\YS-LDV7语音识别-配套资料V1.1(20150517)\LDV7语音识别模块-配套程序\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\REG_RW.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -298,9 +330,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\TB店铺资料\TB文件保存\产品开发资料保存\YS-LDV7语音识别模块\YS-V0.7驱动程序\STC11系列程序\V0.7 语音识别程序：口令模式+IO口控制\CODE\REG_RW.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
+    <PathWithFilename>D:\Tool\语音识别\YS-LDV7语音识别-配套资料V1.1(20150517)\LDV7语音识别模块-配套程序\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\LDCHIP.H</PathWithFilename>
+    <TopLine>8</TopLine>
+    <CurrentLine>42</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -324,33 +356,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\TB店铺资料\TB文件保存\产品开发资料保存\YS-LDV7语音识别模块\YS-V0.7驱动程序\STC11系列程序\V0.7 语音识别程序：口令模式+IO口控制\CODE\LDCHIP.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>E:\TB店铺资料\TB文件保存\产品开发资料保存\YS-LDV7语音识别模块\YS-V0.7驱动程序\STC11系列程序\V0.7 语音识别程序：口令模式+IO口控制\USER\USART.H</PathWithFilename>
+    <PathWithFilename>D:\Tool\语音识别\YS-LDV7语音识别-配套资料V1.1(20150517)\LDV7语音识别模块-配套程序\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\USER\USART.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -1716,13 +1722,13 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>0</ActiveTab>
+      <ActiveTab>5</ActiveTab>
       <Documents>
         <Doc>
           <Name>..\code\main.c</Name>
-          <ColumnNumber>103</ColumnNumber>
-          <TopLine>32</TopLine>
-          <CurrentLine>46</CurrentLine>
+          <ColumnNumber>7</ColumnNumber>
+          <TopLine>220</TopLine>
+          <CurrentLine>260</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\USER\USART.H</Name>
@@ -1732,9 +1738,9 @@
         </Doc>
         <Doc>
           <Name>..\CODE\LDCHIP.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>8</ColumnNumber>
+          <TopLine>8</TopLine>
+          <CurrentLine>42</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\CODE\REG_RW.H</Name>
@@ -1749,15 +1755,9 @@
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>C:\KEIL\C51\INC\INTRINS.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
-        </Doc>
-        <Doc>
           <Name>..\user\usart.c</Name>
           <ColumnNumber>1</ColumnNumber>
-          <TopLine>28</TopLine>
+          <TopLine>1</TopLine>
           <CurrentLine>45</CurrentLine>
         </Doc>
         <Doc>
@@ -1774,9 +1774,9 @@
         </Doc>
         <Doc>
           <Name>..\code\LDChip.c</Name>
-          <ColumnNumber>69</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>12</CurrentLine>
+          <ColumnNumber>6</ColumnNumber>
+          <TopLine>335</TopLine>
+          <CurrentLine>335</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

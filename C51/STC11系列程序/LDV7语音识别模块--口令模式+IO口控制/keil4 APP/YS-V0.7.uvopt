@@ -122,21 +122,6 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>261</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
           <LineNumber>180</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
@@ -192,10 +177,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>7</ColumnNumber>
+      <ColumnNumber>37</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>220</TopLine>
-      <CurrentLine>260</CurrentLine>
+      <TopLine>217</TopLine>
+      <CurrentLine>240</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\code\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -206,10 +191,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>6</ColumnNumber>
+      <ColumnNumber>12</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>335</TopLine>
-      <CurrentLine>335</CurrentLine>
+      <TopLine>265</TopLine>
+      <CurrentLine>284</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\code\LDChip.c</PathWithFileName>
       <FilenameWithoutPath>LDChip.c</FilenameWithoutPath>
@@ -218,7 +203,7 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>69</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -241,10 +226,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>1</ColumnNumber>
+      <ColumnNumber>34</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>45</CurrentLine>
+      <CurrentLine>8</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\user\usart.c</PathWithFileName>
       <FilenameWithoutPath>usart.c</FilenameWithoutPath>
@@ -252,7 +237,33 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>D:\Tool\语音识别\YS-LDV7语音识别-配套资料V1.1(20150517)\LDV7语音识别模块-配套程序\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\CONFIG.H</PathWithFilename>
+    <PathWithFilename>D:\Gitus\C51\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\CONFIG.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>29</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>D:\Gitus\C51\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\STC11XX.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -278,7 +289,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>D:\Tool\语音识别\YS-LDV7语音识别-配套资料V1.1(20150517)\LDV7语音识别模块-配套程序\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\STC11XX.H</PathWithFilename>
+    <PathWithFilename>D:\Gitus\C51\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\REG_RW.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -304,7 +315,33 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>D:\Tool\语音识别\YS-LDV7语音识别-配套资料V1.1(20150517)\LDV7语音识别模块-配套程序\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\REG_RW.H</PathWithFilename>
+    <PathWithFilename>D:\Gitus\C51\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\LDCHIP.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>22</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>D:\Gitus\C51\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\USER\USART.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -330,33 +367,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>D:\Tool\语音识别\YS-LDV7语音识别-配套资料V1.1(20150517)\LDV7语音识别模块-配套程序\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\CODE\LDCHIP.H</PathWithFilename>
-    <TopLine>8</TopLine>
-    <CurrentLine>42</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>D:\Tool\语音识别\YS-LDV7语音识别-配套资料V1.1(20150517)\LDV7语音识别模块-配套程序\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\USER\USART.H</PathWithFilename>
+    <PathWithFilename>H:\TOOL\NETWORK\KEILC51V900\C51\INC\INTRINS.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -1722,13 +1733,13 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>5</ActiveTab>
+      <ActiveTab>8</ActiveTab>
       <Documents>
         <Doc>
           <Name>..\code\main.c</Name>
-          <ColumnNumber>7</ColumnNumber>
-          <TopLine>220</TopLine>
-          <CurrentLine>260</CurrentLine>
+          <ColumnNumber>37</ColumnNumber>
+          <TopLine>217</TopLine>
+          <CurrentLine>240</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\USER\USART.H</Name>
@@ -1738,9 +1749,9 @@
         </Doc>
         <Doc>
           <Name>..\CODE\LDCHIP.H</Name>
-          <ColumnNumber>8</ColumnNumber>
-          <TopLine>8</TopLine>
-          <CurrentLine>42</CurrentLine>
+          <ColumnNumber>33</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>22</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\CODE\REG_RW.H</Name>
@@ -1756,9 +1767,9 @@
         </Doc>
         <Doc>
           <Name>..\user\usart.c</Name>
-          <ColumnNumber>1</ColumnNumber>
+          <ColumnNumber>34</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>45</CurrentLine>
+          <CurrentLine>8</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\code\Reg_RW.c</Name>
@@ -1768,15 +1779,21 @@
         </Doc>
         <Doc>
           <Name>..\CODE\CONFIG.H</Name>
-          <ColumnNumber>0</ColumnNumber>
+          <ColumnNumber>8</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <CurrentLine>29</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\code\LDChip.c</Name>
-          <ColumnNumber>6</ColumnNumber>
-          <TopLine>335</TopLine>
-          <CurrentLine>335</CurrentLine>
+          <ColumnNumber>12</ColumnNumber>
+          <TopLine>265</TopLine>
+          <CurrentLine>284</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>H:\TOOL\NETWORK\KEILC51V900\C51\INC\INTRINS.H</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
