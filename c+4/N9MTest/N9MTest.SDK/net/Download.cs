@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace N9MTest.SDK.net
+{
+    public enum DownloadType
+    {
+        DOWNLOAD_EVENTTYPE_RECFILE = 1 << 0,
+        DOWNLOAD_EVENTTYPE_GPSINFO = 1 << 1,
+        DOWNLOAD_EVENTTYPE_ALARMINFO = 1 << 2,
+        DOWNLOAD_EVENTTYPE_ACCINFO = 1 << 3,
+        DOWNLOAD_EVENTTYPE_DEVSTATE = 1 << 4,
+        DOWNLOAD_EVENTTYPE_PARAMETER = 1 << 5,
+        DOWNLOAD_EVENTTYPE_USERLOG = 1 << 6,
+        DOWNLOAD_EVENTTYPE_STATIONREPORT = 1 << 7,
+        DOWNLOAD_EVENTTYPE_ElLECTRONICFENCE = 1 << 8,
+        DOWNLOAD_EVENTTYPE_IMAGE = 1 << 9,
+        DOWNLOAD_EVENTTYPE_GREENDRIVER = 1 << 10,
+        DOWNLOAD_EVENTTYPE_CANDATA = 1 << 11,
+        DOWNLOAD_EVENTTYPE_DIALLOG = 1 << 12,
+        DOWNLOAD_EVENTTYPE_CUSTOMINFO = 1 << 13,
+        DOWNLOAD_EVENTTYPE_RECFILE_EXTEND = 1 << 14,
+        DOWNLOAD_EVENTTYPE_FLIGHTATTITUDE = 1 << 15,
+        DOWNLOAD_EVENTTYPE_PRINTDATA = 1 << 16,
+    }
+}

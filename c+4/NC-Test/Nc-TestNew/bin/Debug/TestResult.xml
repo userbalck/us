@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="F:\us\c+4\NC-Test\Nc-TestNew\bin\Debug\Nc-TestNew.dll" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-07-20" time="14:20:33">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5477" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="F:\Svn目录\test-目录\test自动化\N9Mtest\NUnit-2.6.3 GUI Tools\bin" machine-name="SKY-20161115XKA" user="Administrator" user-domain="SKY-20161115XKA" />
+  <culture-info current-culture="zh-CN" current-uiculture="zh-CN" />
+  <test-suite type="Assembly" name="F:\us\c+4\NC-Test\Nc-TestNew\bin\Debug\Nc-TestNew.dll" executed="True" result="Failure" success="False" time="0.010" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="NC_Test" executed="True" result="Failure" success="False" time="0.009" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="_002Nc_Alac" executed="True" result="Failure" success="False" time="0.008" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="Alac_Test01" executed="True" result="Failure" success="False" time="0.007" asserts="0">
+                <results>
+                  <test-case name="NC_Test._002Nc_Alac.Alac_Test01.Channe" executed="True" result="Failure" success="False" time="0.002" asserts="0">
+                    <failure>
+                      <message><![CDATA[  Expected: 1
+  But was:  2
+]]></message>
+                      <stack-trace><![CDATA[在 NC_Test._002Nc_Alac.Alac_Test01.Channe() 位置 F:\us\c+4\NC-Test\Nc-TestNew\002Nc-Alac\Alac-Test01.cs:行号 42
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

@@ -1,0 +1,12 @@
+F:\Svn目录\搬砖-项目\c+4项目\NC177\NC177\bin\Debug\NC177.dll
+F:\Svn目录\搬砖-项目\c+4项目\NC177\NC177\bin\Debug\NC177.pdb
+F:\Svn目录\搬砖-项目\c+4项目\NC177\NC177\bin\Debug\nunit.framework.dll
+F:\Svn目录\搬砖-项目\c+4项目\NC177\NC177\bin\Debug\nunit.framework.xml
+F:\Svn目录\搬砖-项目\c+4项目\NC177\NC177\obj\Debug\NC177.dll
+F:\Svn目录\搬砖-项目\c+4项目\NC177\NC177\obj\Debug\NC177.pdb
+D:\us\c+4\NC177\NC177\bin\Debug\NC177.dll
+D:\us\c+4\NC177\NC177\bin\Debug\NC177.pdb
+D:\us\c+4\NC177\NC177\obj\Debug\NC177.dll
+D:\us\c+4\NC177\NC177\obj\Debug\NC177.pdb
+D:\us\c+4\NC177\NC177\bin\Debug\nunit.framework.dll
+D:\us\c+4\NC177\NC177\bin\Debug\nunit.framework.xml

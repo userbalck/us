@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9104E2B-8FCB-4D7E-9433-DE4493A8106A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>N9MTest</RootNamespace>
+    <AssemblyName>N9MTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MediaInfoNET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\MediaInfoNET.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.Framework-3.6.1\bin\net-4.5\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise />
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Alarm\TestCase_AlarmLinkage.cs" />
+    <Compile Include="Alarm\SetUpAlarm.cs" />
+    <Compile Include="Alarm\TestCase_AlarmDelay.cs" />
+    <Compile Include="Alarm\TestCase_AlarmLock.cs" />
+    <Compile Include="Alarm\TestCase_AlarmPrerecord.cs" />
+    <Compile Include="Alarm\TestCase_IOAlarm.cs" />
+    <Compile Include="Alarm\TestCase_SpeedAlarm.cs" />
+    <Compile Include="Alarm\TestCase_Temperature.cs" />
+    <Compile Include="Config\SetUpConfig.cs" />
+    <Compile Include="Control\SetUpControl.cs" />
+    <Compile Include="DialupNetwork\DialState.cs" />
+    <Compile Include="DialupNetwork\NetMode.cs" />
+    <Compile Include="DialupNetwork\NetType.cs" />
+    <Compile Include="DialupNetwork\SetUpDialupNetwork.cs" />
+    <Compile Include="DialupNetwork\SIMState.cs" />
+    <Compile Include="DialupNetwork\TestCase_Dialup.cs" />
+    <Compile Include="DialupNetwork\TestCase_RegisterInfo.cs" />
+    <Compile Include="DialupNetwork\TestCase_Server.cs" />
+    <Compile Include="Fatigue\TestCase_FatigueDriving.cs" />
+    <Compile Include="Fatigue\SetUpFatigue.cs" />
+    <Compile Include="Geofence\TestCase_EleFencecs.cs" />
+    <Compile Include="commons\Constants.cs" />
+    <Compile Include="commons\FUN.cs" />
+    <Compile Include="commons\PubFun.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="GPS\SetUpGPS.cs" />
+    <Compile Include="Local\SetUpLocal.cs" />
+    <Compile Include="Local\TestCase_WiredNetwork.cs" />
+    <Compile Include="Maintenance\SetUpMaintenance.cs" />
+    <Compile Include="Maintenance\TestCase_MaintenancePlatform.cs" />
+    <Compile Include="Maintenance\TestCase_RemoteMantenance.cs" />
+    <Compile Include="Performance\TestCase_Performance.cs" />
+    <Compile Include="Peripherals\TestCase_Peripherals.cs" />
+    <Compile Include="Playback\TestCase_PlaybackBackup.cs" />
+    <Compile Include="Produce\TestCase_AutoTest.cs" />
+    <Compile Include="PTZ\SetUpPTZ.cs" />
+    <Compile Include="Record\OverwriteMode.cs" />
+    <Compile Include="Record\RecordMode.cs" />
+    <Compile Include="Record\TestCase_AudioFormat.cs" />
+    <Compile Include="Record\TestCase_DualStream.cs" />
+    <Compile Include="Record\TestCase_DualStreamOverwrite.cs" />
+    <Compile Include="Record\TestCase_OverwriteStrategy.cs" />
+    <Compile Include="Record\TestCase_RecordChannel.cs" />
+    <Compile Include="Record\TestCase_RecordFile.cs" />
+    <Compile Include="Record\TestCase_RecordMode.cs" />
+    <Compile Include="Record\TestCase_RecordTotalBitrate.cs" />
+    <Compile Include="Record\TestCase_SingleStream.cs" />
+    <Compile Include="Record\TestCase_VideoFormat.cs" />
+    <Compile Include="Time\TestCase_DateTime.cs" />
+    <Compile Include="Time\TestCase_DST.cs" />
+    <Compile Include="Power\TestCase_PowerBoot.cs" />
+    <Compile Include="Ceiba2\TestCase_Ceiba2.cs" />
+    <Compile Include="Record\SetUpRecord.cs" />
+    <Compile Include="Record\TestCase_Audio.cs" />
+    <Compile Include="Snap\SetUpSnap.cs" />
+    <Compile Include="Storage\SetUpStorage.cs" />
+    <Compile Include="Storage\TestCase_Compatibility.cs" />
+    <Compile Include="Storage\TestCase_Format.cs" />
+    <Compile Include="Playback\TestCase_PlaybackSearch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Time\SetUpTime.cs" />
+    <Compile Include="Time\TestCase_Timing.cs" />
+    <Compile Include="Config\TestCase_ParameterConfig.cs" />
+    <Compile Include="GPS\TestCase_Navigation.cs" />
+    <Compile Include="Snap\TestCase_SnapShot.cs" />
+    <Compile Include="TestCase_Basecase.cs" />
+    <Compile Include="UI\TestCase_UIManager.cs" />
+    <Compile Include="Upgrade\TestCase_Upgrade.cs" />
+    <Compile Include="Upgrade\SetupUpgrade.cs" />
+    <Compile Include="Upgrade\TestCase_UpgradeProtect.cs" />
+    <Compile Include="Upload\SetUpUpload.cs" />
+    <Compile Include="User\SetUpUser.cs" />
+    <Compile Include="User\TestCase_UserManager.cs" />
+    <Compile Include="WIFI\SetUpWIFI.cs" />
+    <Compile Include="WIFI\TestCase_WIFI.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{10ac02d8-8f67-4981-920f-9b6f07bc0a3b}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\N9MTest.SDK\N9MTest.SDK.csproj">
+      <Project>{d5e848a7-8d89-4086-84a6-daea6d50df5e}</Project>
+      <Name>N9MTest.SDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{2294d642-0342-4701-97e5-c63d0cff6fb8}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

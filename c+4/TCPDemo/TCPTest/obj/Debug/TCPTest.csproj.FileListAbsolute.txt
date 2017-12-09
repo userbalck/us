@@ -1,0 +1,9 @@
+F:\us\c+4\TCPTest\TCPTest\bin\Debug\TCPTest.exe.config
+F:\us\c+4\TCPTest\TCPTest\bin\Debug\TCPTest.exe
+F:\us\c+4\TCPTest\TCPTest\bin\Debug\TCPTest.pdb
+F:\us\c+4\TCPTest\TCPTest\obj\Debug\TCPTest.csprojResolveAssemblyReference.cache
+F:\us\c+4\TCPTest\TCPTest\obj\Debug\TCPTest.Form1.resources
+F:\us\c+4\TCPTest\TCPTest\obj\Debug\TCPTest.Properties.Resources.resources
+F:\us\c+4\TCPTest\TCPTest\obj\Debug\TCPTest.csproj.GenerateResource.Cache
+F:\us\c+4\TCPTest\TCPTest\obj\Debug\TCPTest.exe
+F:\us\c+4\TCPTest\TCPTest\obj\Debug\TCPTest.pdb

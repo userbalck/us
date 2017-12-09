@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1003]D:\us\c+4\NC177\NC177\bin\Debug\NC177.dll</TopNode>
+  <SelectedNode>[0-1001]NC177.Channel.Channel.Channe</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1003]D:\us\c+4\NC177\NC177\bin\Debug\NC177.dll" Expanded="true" />
+    <Node UniqueName="[0-1004]NC177" Expanded="true" />
+    <Node UniqueName="[0-1005]NC177.Channel" Expanded="true" />
+    <Node UniqueName="[0-1000]NC177.Channel.Channel" Expanded="true" />
+  </Nodes>
+</VisualState>

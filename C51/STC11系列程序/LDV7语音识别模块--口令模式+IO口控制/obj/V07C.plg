@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\Gitus\C51\STC11系列程序\LDV7语音识别模块--口令模式+IO口控制\keil4 APP\YS-V0.7.uvproj
+Project File Date:  02/21/2015
+
+<h2>Output:</h2>
+Build target 'YS-V0.7口令模式工程+IO控制'
+compiling main.c...
+..\CODE\MAIN.C(41): error C202: 'p1': undefined identifier
+compiling usart.c...
+Target not created
+Build target 'YS-V0.7口令模式工程+IO控制'
+compiling main.c...
+linking...
+Program Size: data=32.0 xdata=0 code=2526
+creating hex file from "..\obj\V07C"...
+"..\obj\V07C" - 0 Error(s), 0 Warning(s).
+Build target 'YS-V0.7口令模式工程+IO控制'
+compiling main.c...
+linking...
+Program Size: data=32.0 xdata=0 code=2526
+creating hex file from "..\obj\V07C"...
+"..\obj\V07C" - 0 Error(s), 0 Warning(s).
+Build target 'YS-V0.7口令模式工程+IO控制'
+compiling main.c...
+..\CODE\MAIN.C(245): error C202: 'LEDO': undefined identifier
+Target not created
