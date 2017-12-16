@@ -1,0 +1,4 @@
+baidu:xpath://input[@id='kw']
+用户名:xpath:.//*[@id='username']
+密码:xpath:.//*[@id='userpwd'
+登陆:xpath://div[@type='button']
