@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
+using OpenQA.Selenium.Firefox;
 
 namespace Crocus.TestUI
 {
@@ -44,9 +45,15 @@ namespace Crocus.TestUI
 			}
 			else if ("ie".Equals(Browser))
 			{
-				drvier = new InternetExplorerDriver();
-				Console.WriteLine("ie浏览器：" + Browser);
-			}
+                InternetExplorerOptions options = new InternetExplorerOptions();
+                 options.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
+                drvier = new InternetExplorerDriver(options);
+                Console.WriteLine("ie浏览器：" + Browser);
+            }
+            else if ("fox".Equals(Browser))
+            {
+               // drvier = new FirefoxDriver();
+            }
 			else {
 
 				Console.WriteLine("浏览器配置错误：" + Browser);

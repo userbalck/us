@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-
-
+using System.Text;
 
 namespace Crocus.TestUI
 {
@@ -12,42 +11,53 @@ namespace Crocus.TestUI
 	{
 		private RMXML xmlConfig;
 
-		private Dictionary<string, Dictionary<string, string>> ml = new Dictionary<string, Dictionary<string, string>>();  //集合
-		private System.String yamlf;
+        String type,value;
 		private IWebDriver driver;
-		public LocatYyaml(IWebDriver driver)
+        string ph;
+
+        public LocatYyaml(IWebDriver driver,String xpath)
 		{
-			//yamlfile = "Testxpath.yaml"; //文件赋值
-            yamlf = "Testbaidu";
-            this.getYamlFile();
 			this.driver = driver;
-		}
+            //加载文件并读取
+            Console.WriteLine("xpath:"+xpath);
+            PathWrie(xpath);
+        }
+        public void PathWrie(String xpath) {
 
-		private void getYamlFile()
+            String path = xpath;
+            StreamReader srd = new StreamReader(path, Encoding.UTF8);
+            ph = srd.ReadToEnd();
+            srd.Close();
+        }
+		//封装读取元素内容type，value
+        public void TestLoad(String key)
+        {
+            string[] phXpath = ph.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+
+            for (int i = 0; i < phXpath.Length; i++)
+            {
+                string[] datas = phXpath[i].Split(new string[] { ":" }, StringSplitOptions.None);    
+                if (datas[0].Equals(key))
+                {
+                    type = datas[1];
+                    value = datas[2];
+
+                }
+                
+            }
+            if (type==null)
+            {
+                Console.WriteLine("Error未找到{0}",key);
+            }
+        }
+
+        // 添加的map集合
+        public IWebElement getElement(String key)
 		{
-          //  YamlParser parser = new YamlParser();
-
-
-
-            //	var yaml = new YamlStream();
-
-            //TextReader textReader = new StreamReader("c:/file.xml");
-            //ParseStream parser = new Yaml.ParseStream(textReader);
-            throw new NotImplementedException();
-		}
-            
-
-		// 添加的map集合
-		public IWebElement getElement(String key)
-		{
-		String type = ml[key]["type"];
-           
-		String value = ml[key]["value"];
-        Console.WriteLine("type:{0},value{1}", type, value);
-            //返回值
-
-            return driver.FindElement(this.getBy(type, value));
-			//return this.waitForElement(this.getBy(type, value));
+         TestLoad(key);
+        Console.WriteLine("获取的值=type:{0},value{1}", type, value);
+           return driver.FindElement(this.getBy(type, value));
+		//  return this.waitForElement(this.getBy(type, value));
 		}
 
 		private By getBy(String type, String value)
@@ -94,6 +104,9 @@ namespace Crocus.TestUI
 			string waitTim = xmlConfig.gNode("Platform/time").InnerText;
 			string waitTime = waitTim;
 			double timeout = 10;
+
+
+
 
 			return null;
 		}

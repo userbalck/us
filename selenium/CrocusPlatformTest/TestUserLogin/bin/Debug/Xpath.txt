@@ -1,4 +1,8 @@
+user:xpath:.//*[@id='username']
+pwd:xpath:.//*[@id='userpwd']
+login:xpath:.//*[@id='loginform']/div/div[6]/div[3]
 baidu:xpath://input[@id='kw']
+su:xpath:.//*[@id='su']
 用户名:xpath:.//*[@id='username']
 密码:xpath:.//*[@id='userpwd'
 登陆:xpath://div[@type='button']

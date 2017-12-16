@@ -1,6 +1,0 @@
-百度:
-  type:xpath
-  value:"//input[@id='kw']"
-百度一下:
-  type:xpath
-  value:".//*[@id='username']"

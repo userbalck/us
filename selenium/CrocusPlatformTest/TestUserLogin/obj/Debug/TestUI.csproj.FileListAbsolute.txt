@@ -21,7 +21,6 @@ D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\nunit.framework.dll
 D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\WebDriver.dll
 D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\WebDriver.Support.dll
 D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Yaml.dll
-D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\TestUI.csprojResolveAssemblyReference.cache
 D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\TestUI.csproj.CoreCompileInputs.cache
 D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\Crocus.TestUI.dll
 D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\Crocus.TestUI.pdb
