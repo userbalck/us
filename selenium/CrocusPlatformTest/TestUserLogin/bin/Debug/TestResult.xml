@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-12-17" time="00:26:57">
+<test-results name="D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-12-17" time="15:18:24">
   <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.8762" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="H:\Tool\辅助工具xunlei\NUnit-2.6.3 GUI Tools\bin" machine-name="MS-20171001UJKV" user="Administrator" user-domain="MS-20171001UJKV" />
   <culture-info current-culture="zh-CN" current-uiculture="zh-CN" />
-  <test-suite type="Assembly" name="D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll" executed="True" result="Success" success="True" time="15.879" asserts="0">
+  <test-suite type="Assembly" name="D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll" executed="True" result="Success" success="True" time="12.472" asserts="0">
     <results>
-      <test-suite type="Namespace" name="Crocus" executed="True" result="Success" success="True" time="15.874" asserts="0">
+      <test-suite type="Namespace" name="Crocus" executed="True" result="Success" success="True" time="12.472" asserts="0">
         <results>
-          <test-suite type="Namespace" name="TestUI" executed="True" result="Success" success="True" time="15.874" asserts="0">
+          <test-suite type="Namespace" name="TestUI" executed="True" result="Success" success="True" time="12.471" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="IE_Test" executed="True" result="Success" success="True" time="15.873" asserts="0">
+              <test-suite type="TestFixture" name="IE_Test" executed="True" result="Success" success="True" time="12.470" asserts="0">
                 <results>
-                  <test-case name="Crocus.TestUI.IE_Test.Baidu" executed="True" result="Success" success="True" time="11.592" asserts="0" />
+                  <test-case name="Crocus.TestUI.IE_Test.Baidu" executed="True" result="Success" success="True" time="4.740" asserts="0" />
                 </results>
               </test-suite>
             </results>

@@ -7,6 +7,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Firefox;
+using System.Threading;
 
 namespace Crocus.TestUI
 {
@@ -58,11 +59,23 @@ namespace Crocus.TestUI
 
 				Console.WriteLine("浏览器配置错误：" + Browser);
 			}
-			
 
 
+            
 		}
-
-		
-	}
+       
+        
+          
+    }
+     class Selp
+    {
+        //等待
+        public static void sl(int s)
+        {
+            int ss = s * 1000;
+            int t = ss / 1000;
+            Console.WriteLine("等待{0}秒......", t);
+            Thread.Sleep(ss);
+        }
+    }
 }

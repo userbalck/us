@@ -17,6 +17,7 @@ namespace Crocus.TestUI
 		IWebDriver drive;
         LocatYyaml ple;
         string pwd;
+
        [TestFixtureSetUp]
 		public void init()
 		{
@@ -29,27 +30,28 @@ namespace Crocus.TestUI
             drive.Navigate().GoToUrl(weburl);       //s输入网址
             ple = new LocatYyaml(drive, "Xpath.txt");          //传递webdr对象,读取文件参数
             Console.WriteLine("初始化：访问地址URL：{0}", weburl);
-           
+           // drive.Manage().Window.Maximize();   //窗口最大化
+
         }
 		[SetUp]
         public void TestSetUp() {
-             pwd = xmlConfig.gNode("Platform/IP").InnerText;
+             pwd = xmlConfig.gNode("Platform/pwd").InnerText;
             Console.WriteLine("TestSetUp");
         }
         [Test]
         public void UserNull() {
             //usernull
-            String expected = "NVR Login";
+            String expected = "View MDVR";
             String t=drive.Title;
             Console.WriteLine(t);
             ple.getElement("user").Clear(); ple.getElement("pwd").Clear();//清楚用户密码
             ple.getElement("pwd").SendKeys(pwd);  //管理员密码amdin
-            sl(10);
             ple.getElement("login").Click();
+            Selp.sl(3);
+            String tit = drive.Title;
+            Console.WriteLine("获取标题为：{0}",tit);
+            Assert.AreEqual(expected, tit);
         }
-
-
-
 
         [TearDown]
         public void jsRepat()
@@ -57,17 +59,22 @@ namespace Crocus.TestUI
             Console.WriteLine("test结束运行TearDown");
 
         }
-        public void sl(int s)
-        {
-            int ss = s * 1000;
-            int t = ss / 1000;
-            Console.WriteLine("等待{0}秒......", t);
-            Thread.Sleep(ss);
-        }
+      
 
         [TestFixtureTearDown]
-        public void js()
+        public void jsFixture()
         {
+            try
+            {
+                drive.FindElement(By.XPath("//div[@onclick='LoginOut();']")).Click();
+                Console.WriteLine("try注销");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("try注销失败");
+               
+            }
+
             drive.Quit();
             Console.WriteLine("结束运行TestFixtureTearDown");
 

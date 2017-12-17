@@ -45,7 +45,7 @@ c4升级提示:
   value:".//*[@id='li_2']/div/font"
 2通用:
   type:xpath
-  value:".//*[@id='config_content_bgDiv']/div[2]/ul/li[1]"  
+  value:".//*[@id='config_content_bgDiv']/div[2]/ul/li[1]"
 2日期格式:
   type:xpath
   value:".//*[@id='MDVR_TIMEP_DATEM']"  
@@ -64,7 +64,7 @@ c4升级提示:
 2年:
   type:xpath
   value:".//*[@id='config_content_bgDiv']/div[3]/div[3]/div/div/div[2]/span/div/div[1]/span[1]/a"  
-2年sel:
+2年select:
   type:xpath
   value:".//*[@id='config_content_bgDiv']/div[3]/div[3]/div/div/div[2]/span/div/div[1]/span[1]/select"
 2js设备时间:

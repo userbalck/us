@@ -3,7 +3,7 @@
   <Platform>
     <IP>http://www.baidu.com</IP>
     <Port>8000</Port>
-    <TimeSpanNav>500</TimeSpanNav>
+    <Time>3</Time>
     <Browser>ie</Browser>
     <user>admin</user>
     <pwd>120223</pwd>
