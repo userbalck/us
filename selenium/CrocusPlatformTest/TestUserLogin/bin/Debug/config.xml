@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <Platform>
-    <IP>http://www.baidu.com</IP>
+    <IP>192.168.20.50</IP>
     <Port>8000</Port>
     <Time>3</Time>
     <Browser>ie</Browser>

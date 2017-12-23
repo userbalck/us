@@ -38,7 +38,7 @@ namespace Crocus.TestUI
             //this.driver.Quit();
             this.driver.Close();
         }
-
+		[Ignore("111")]
         [Test]
         public void tc_UserLogin()
         {
@@ -158,7 +158,8 @@ namespace Crocus.TestUI
             
         }
 
-        [Test]
+		[Ignore("111")]
+		[Test]
         public void tc_TestRole()
         {
             
