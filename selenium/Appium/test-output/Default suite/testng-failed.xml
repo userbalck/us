@@ -5,7 +5,8 @@
     <classes>
       <class name="Demo1.test">
         <methods>
-          <include name="DemoApp"/>
+          <include name="Demo1"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- Demo1.test -->
     </classes>

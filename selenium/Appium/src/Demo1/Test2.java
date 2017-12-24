@@ -1,18 +1,21 @@
 package Demo1;
 
+import java.io.File;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 
 public class Test2 {
-
+	static AndroidDriver driver;
 	public static void main(String[] args)  throws Exception{
 		// TODO Auto-generated method stub
-		 AndroidDriver driver;
+		 
 		 DesiredCapabilities cap=new DesiredCapabilities();
 		 cap.setCapability("automationName", "Appium");//appium做自动化
 		 //    cap.setCapability("app", "C:\\software\\jrtt.apk");//安装apk
@@ -39,6 +42,28 @@ public class Test2 {
 		 driver.findElement(By.name("+")).click();
 		 driver.findElement(By.name("1")).click();
 		  driver.findElement(By.name("=")).click();
+	}
+	@Test
+	public void Demo1() throws MalformedURLException{
+		
+		System.out.println("Demo1");
+        File classpathRoot = new File(System.getProperty("user.dir")); 
+        System.out.println("SetupApi--------------1"+classpathRoot);
+        File appDir = new File(classpathRoot, "/apps");
+        File app = new File(appDir, "ContactManager.apk");
+        System.out.println("app-"+app);
+        //设置相关参数
+        DesiredCapabilities capabilities = new DesiredCapabilities(); 	//启动appium
+    	capabilities.setCapability("sessionOverride", true);//每次启动时覆盖session，否则第二次后运行会报错不能新建session  
+        capabilities.setCapability("deviceName","Android Emulator");  //
+        capabilities.setCapability("platformVersion", "4.4");    //设置安卓系统版本   
+        capabilities.setCapability("app", app.getAbsolutePath()); //安装app
+
+        
+        //初始化连接安卓系统，
+        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+  
+        System.out.println("App is launched!"+driver);
 	}
 
 }
