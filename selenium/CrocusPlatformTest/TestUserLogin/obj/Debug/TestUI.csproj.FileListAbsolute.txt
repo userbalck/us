@@ -24,3 +24,11 @@ D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Yaml.dll
 D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\TestUI.csproj.CoreCompileInputs.cache
 D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\Crocus.TestUI.dll
 D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\Crocus.TestUI.pdb
+D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll
+D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.pdb
+D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\nunit.framework.dll
+D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\WebDriver.dll
+D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\WebDriver.Support.dll
+D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Yaml.dll
+D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\Crocus.TestUI.dll
+D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\Crocus.TestUI.pdb
