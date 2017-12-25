@@ -17,6 +17,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class Day1 {
 	AppiumDriver drives;
 	LocatoSamaple pl;
+	
 	@BeforeClass
 	public void Bef() throws Exception{
 		System.out.println("获取当前路径apk");
@@ -60,6 +61,7 @@ public class Day1 {
 	    	  System.out.println("quit");
 	    	  drives.quit();  
 	    }  
+	 
 	   public void ty(int tiem) throws Exception {
 		  try {
 			  System.out.println("等待秒："+tiem);

@@ -6,9 +6,7 @@
       <class name="MdvrTest.Day1">
         <methods>
           <include name="Bef"/>
-          <include name="Method"/>
           <include name="Loginn"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- MdvrTest.Day1 -->
     </classes>
