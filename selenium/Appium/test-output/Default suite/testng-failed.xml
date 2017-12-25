@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Demo1.test">
+      <class name="MdvrTest.Day1">
         <methods>
-          <include name="Demo1"/>
+          <include name="Bef"/>
+          <include name="Method"/>
+          <include name="Loginn"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Demo1.test -->
+      </class> <!-- MdvrTest.Day1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

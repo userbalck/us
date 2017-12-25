@@ -1,0 +1,15 @@
+ip:
+  type:id
+  value:"com.streamaxtech.mdvr.direct:id/device_ip"
+pwd:
+  type:id
+  value:"com.streamaxtech.mdvr.direct:id/device_pwd_edit"
+login:
+  type:id
+  value:"com.streamaxtech.mdvr.direct:id/login_device_btn"
+ie_tcqt:
+  type:xpath
+  value:"//div[@onclick='LoginOut();']"   
+  
+  
+  

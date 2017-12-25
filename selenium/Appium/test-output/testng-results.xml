@@ -2,20 +2,28 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15781" started-at="2017-12-24T16:11:24Z" finished-at="2017-12-24T16:11:40Z">
+  <suite name="Default suite" duration-ms="24085" started-at="2017-12-25T15:45:21Z" finished-at="2017-12-25T15:45:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15781" started-at="2017-12-24T16:11:24Z" finished-at="2017-12-24T16:11:40Z">
-      <class name="Demo1.test">
-        <test-method status="PASS" signature="Demo1()[pri:0, instance:Demo1.test@59f99ea]" name="Demo1" duration-ms="15055" started-at="2017-12-25T00:11:24Z" finished-at="2017-12-25T00:11:40Z">
+    <test name="Default test" duration-ms="24085" started-at="2017-12-25T15:45:21Z" finished-at="2017-12-25T15:45:45Z">
+      <class name="MdvrTest.Day1">
+        <test-method status="PASS" signature="Bef()[pri:0, instance:MdvrTest.Day1@77caeb3e]" name="Bef" is-config="true" duration-ms="9537" started-at="2017-12-25T23:45:21Z" finished-at="2017-12-25T23:45:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Demo1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Demo1.test@59f99ea]" name="tearDown" is-config="true" duration-ms="714" started-at="2017-12-25T00:11:40Z" finished-at="2017-12-25T00:11:40Z">
+        </test-method> <!-- Bef -->
+        <test-method status="PASS" signature="Method()[pri:0, instance:MdvrTest.Day1@77caeb3e]" name="Method" is-config="true" duration-ms="17" started-at="2017-12-25T23:45:30Z" finished-at="2017-12-25T23:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Method -->
+        <test-method status="PASS" signature="Loginn()[pri:0, instance:MdvrTest.Day1@77caeb3e]" name="Loginn" duration-ms="13797" started-at="2017-12-25T23:45:30Z" finished-at="2017-12-25T23:45:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MdvrTest.Day1@77caeb3e]" name="tearDown" is-config="true" duration-ms="725" started-at="2017-12-25T23:45:44Z" finished-at="2017-12-25T23:45:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Demo1.test -->
+      </class> <!-- MdvrTest.Day1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
