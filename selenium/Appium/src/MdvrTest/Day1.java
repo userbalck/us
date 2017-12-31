@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.Seleium.www.Assertion;
 import com.Seleium.www.LocatoSamaple;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -46,16 +47,39 @@ public class Day1 {
 	}
 	@Test
 	public void Loginn() throws Exception{
-		System.out.println("Loginn");
-		String sip=pl.getElement("ip").getText();
-		pl.getElement("ip").clear();
-		pl.getElement("ip").sendKeys("192.168.20.57");
-		pl.getElement("pwd").clear();
-		String slogin=pl.getElement("login").getText();
-		System.out.println("slogin:"+slogin);
-		ty(5);
+		//登陆用例
+				System.out.println("Loginn");
+				String sip=pl.getElement("ip").getText();
+				pl.getElement("ip").clear();
+				pl.getElement("ip").sendKeys("192.168.20.44");
+				pl.getElement("pwd").clear();
+				String slogin=pl.getElement("login").getText();
+				pl.getElement("login").click();
+				ty(10);
+				System.out.println("登陆成功");
+				System.out.println("slogin:"+slogin);
+				Assertion.verifyEquals(slogin, slogin);
+				ty(5);
 	}
-
+	@Test
+	public void Loginn2() throws Exception{
+		//通用默写功能点击
+		pl.getElement("info").click();
+		ty(10);
+		pl.getElement("module").click();
+		ty(10);
+		pl.getElement("storage").click();
+		ty(10);
+		pl.getElement("version").click();
+		ty(10);
+		pl.getElement("crocus").click();
+		ty(10);
+		pl.getElement("hwconfig").click();
+		ty(10);
+		pl.getElement("other").click();
+		ty(20);
+		
+	}
 	 @AfterClass
 	    public void tearDown() throws Exception {  
 	    	  System.out.println("quit");
