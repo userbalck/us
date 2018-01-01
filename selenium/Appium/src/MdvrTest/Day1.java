@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.Seleium.www.Assertion;
+import com.Seleium.www.Assist;
 import com.Seleium.www.LocatoSamaple;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -38,7 +39,7 @@ public class Day1 {
         //初始化连接安卓系统，
         drives = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         System.out.println("App is launched!"+drives);
-		
+		Assist.ty(5);
 	}
 	@BeforeMethod
 	public void Method(){	

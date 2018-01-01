@@ -5,7 +5,7 @@
     <classes>
       <class name="Demo1.Test3">
         <methods>
-          <include name="Eef"/>
+          <include name="EeforClass"/>
           <include name="Test1"/>
         </methods>
       </class> <!-- Demo1.Test3 -->

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<config>
-	<http>https://www.baidu.com/</http>
-	<browser>firefox</browser>
-	<waitTime>10</waitTime>
-	<adminuser>admin</adminuser>
-	<passpwd>120223</passpwd>
-	<asp>inurl:asp?id=66</asp>
-</config>
