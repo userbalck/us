@@ -26,6 +26,7 @@ namespace Crocus.TestUI
         public void PathWrie(String xpath) {
 
             String path = xpath;
+			
             StreamReader srd = new StreamReader(path, Encoding.UTF8);
             ph = srd.ReadToEnd();
             srd.Close();

@@ -5,8 +5,10 @@
     <classes>
       <class name="MdvrTest.Day1">
         <methods>
-          <include name="Bef"/>
-          <include name="Loginn"/>
+          <include name="Method"/>
+          <include name="Befor"/>
+          <include name="Loginn2"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- MdvrTest.Day1 -->
     </classes>

@@ -1,0 +1,4 @@
+D:\giT\us\selenium\Andorid_Mdvr\Andorid_Mdvr\bin\Debug\Andorid_Mdvr.dll
+D:\giT\us\selenium\Andorid_Mdvr\Andorid_Mdvr\bin\Debug\Andorid_Mdvr.pdb
+D:\giT\us\selenium\Andorid_Mdvr\Andorid_Mdvr\obj\Debug\Andorid_Mdvr.dll
+D:\giT\us\selenium\Andorid_Mdvr\Andorid_Mdvr\obj\Debug\Andorid_Mdvr.pdb

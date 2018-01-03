@@ -1,5 +1,0 @@
-D:\us\c+4\think_Test\think_Test\bin\Debug\think_Test.exe.config
-D:\us\c+4\think_Test\think_Test\bin\Debug\think_Test.exe
-D:\us\c+4\think_Test\think_Test\bin\Debug\think_Test.pdb
-D:\us\c+4\think_Test\think_Test\obj\Debug\think_Test.exe
-D:\us\c+4\think_Test\think_Test\obj\Debug\think_Test.pdb

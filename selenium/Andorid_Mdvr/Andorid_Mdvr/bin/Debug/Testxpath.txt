@@ -1,0 +1,12 @@
+ip=id=com.streamaxtech.mdvr.direct:id/device_ip
+pwd=id=com.streamaxtech.mdvr.direct:id/device_pwd_edit
+login=id=com.streamaxtech.mdvr.direct:id/login_device_btn
+通用=id=通用模块功能-----
+info=id=com.streamaxtech.mdvr.direct:id/profile_left_base_info_textview
+module=id=com.streamaxtech.mdvr.direct:id/profile_left_device_module_textview
+storage=id=com.streamaxtech.mdvr.direct:id/profile_left_storage_device_textview   
+version=id=com.streamaxtech.mdvr.direct:id/profile_left_version_info_textview   
+crocus=id=com.streamaxtech.mdvr.direct:id/profile_left_operations_textview
+hwconfig=id=com.streamaxtech.mdvr.direct:id/profile_left_hwconfig_table_textview
+other=id=com.streamaxtech.mdvr.direct:id/profile_left_other_info_textview
+  

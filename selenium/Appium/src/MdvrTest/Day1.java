@@ -10,6 +10,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.Seleium.www.ApkDrivcesr;
+import com.Seleium.www.Assertion;
+import com.Seleium.www.Assist;
+import com.Seleium.www.Config;
 import com.Seleium.www.LocatoSamaple;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -19,25 +23,13 @@ public class Day1 {
 	LocatoSamaple pl;
 	
 	@BeforeClass
-	public void Bef() throws Exception{
-		System.out.println("获取当前路径apk");
-        File classpathRoot = new File(System.getProperty("user.dir")); 
-        System.out.println("SetupApi--------------1"+classpathRoot);
-        File appDir = new File(classpathRoot, "/apps");
-        File app = new File(appDir, "MDVR.apk");
-        System.out.println("app-"+app);
-        //设置相关参数
-        DesiredCapabilities capabilities = new DesiredCapabilities(); 	//启动appium
-       // capabilities.setCapability("noReset", true); 	//	测试已安装的应用。不安装app
-        capabilities.setCapability("deviceName","Android Emulator");  //
-        capabilities.setCapability("platformVersion", "4.4");    //设置安卓系统版本   
-        capabilities.setCapability("sessionOverride", true);//每次启动时覆盖session，否则第二次后运行会报错不能新建session  
-        capabilities.setCapability("app", app.getAbsolutePath()); //安装app
-        System.out.println("安装");
+	public void Befor() throws Exception{
+		ApkDrivcesr apk=new ApkDrivcesr();
+		DesiredCapabilities capabilities=apk.GetCap();
         //初始化连接安卓系统，
         drives = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         System.out.println("App is launched!"+drives);
-		
+		Assist.ty(5);
 	}
 	@BeforeMethod
 	public void Method(){	
@@ -46,16 +38,40 @@ public class Day1 {
 	}
 	@Test
 	public void Loginn() throws Exception{
-		System.out.println("Loginn");
-		String sip=pl.getElement("ip").getText();
-		pl.getElement("ip").clear();
-		pl.getElement("ip").sendKeys("192.168.20.57");
-		pl.getElement("pwd").clear();
-		String slogin=pl.getElement("login").getText();
-		System.out.println("slogin:"+slogin);
-		ty(5);
+		//登陆用例
+		String ip=Config.htp;
+				System.out.println("Loginn");
+				String sip=pl.getElement("ip").getText();
+				pl.getElement("ip").clear();
+				pl.getElement("ip").sendKeys(ip);
+				pl.getElement("pwd").clear();
+				String slogin=pl.getElement("login").getText();
+				pl.getElement("login").click();
+				ty(10);
+				System.out.println("登陆成功");
+				System.out.println("slogin:"+slogin);
+				Assertion.verifyEquals(slogin, slogin);
+				ty(5);
 	}
-
+	@Test
+	public void Loginn2() throws Exception{
+		//通用默写功能点击
+		pl.getElement("info").click();
+		ty(10);
+		pl.getElement("module").click();
+		ty(10);
+		pl.getElement("storage").click();
+		ty(10);
+		pl.getElement("version").click();
+		ty(10);
+		pl.getElement("crocus").click();
+		ty(10);
+		pl.getElement("hwconfig").click();
+		ty(10);
+		pl.getElement("other").click();
+		ty(20);
+		
+	}
 	 @AfterClass
 	    public void tearDown() throws Exception {  
 	    	  System.out.println("quit");

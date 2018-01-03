@@ -73,8 +73,8 @@ namespace Crocus.TestUI
         public static void sl(int s)
         {
             int ss = s * 1000;
-            int t = ss / 1000;
-            Console.WriteLine("等待{0}秒......", t);
+           
+            Console.WriteLine("等待{0}秒......", s);
             Thread.Sleep(ss);
         }
     }

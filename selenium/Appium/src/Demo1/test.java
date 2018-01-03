@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -16,7 +17,8 @@ public class test {
 	   private AppiumDriver driver; 
 	   WebElement el;
 	   List<AndroidElement> textFieldsList;
-	@Test
+	   
+	
 	public void DemoApp() throws MalformedURLException{
 		
 		System.out.println("获取当前路径apk");
@@ -52,7 +54,7 @@ public class test {
 	}
 	
 	@Test
-	public void Demo1() throws InterruptedException, MalformedURLException{
+	public void Demo1() throws Exception{
 		//测试安装程序
 		System.out.println("Demo1");
  
@@ -77,7 +79,7 @@ public class test {
        // XpathName();  //name定位
         XpathClasNmae();
 	}
-	public void XpathId() throws InterruptedException {
+	public void XpathId() throws Exception {
 		//定位ID
 		List<AndroidElement> textFieldsList = driver.findElementsByClassName("android.widget.EditText");
 		String edget0=textFieldsList.get(0).getText();
@@ -92,7 +94,7 @@ public class test {
 		
 		
 	}
-	public void XpathName() throws InterruptedException {
+	public void XpathName() throws Exception {
 		System.out.println("Name定位");
 		String create=driver.findElement(By.name("运维平台登录")).getText();
 		
@@ -100,7 +102,7 @@ public class test {
 		ty(5);
 
 	}
-	public void XpathClasNmae() throws InterruptedException {
+	public void XpathClasNmae() throws Exception {
 		//ClassName定位会有多个class
 		System.out.println("XpathClasNmae定位");
 		//多个editetext定位不建议使用
@@ -115,10 +117,10 @@ public class test {
 	}
     @AfterClass
     public void tearDown() throws Exception {  
-    	  System.out.println("quit");
+    	  System.out.println("@AfterClass+quit");
         driver.quit();  
     }  
-   public void ty(int tiem) throws InterruptedException {
+   public void ty(int tiem) throws Exception {
 	  try {
 		  System.out.println("等待秒："+tiem);
 		  int t=tiem*1000;

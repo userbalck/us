@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29970" started-at="2017-12-25T15:53:53Z" finished-at="2017-12-25T15:54:23Z">
+  <suite name="Default suite" duration-ms="124363" started-at="2018-01-03T15:05:21Z" finished-at="2018-01-03T15:07:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29970" started-at="2017-12-25T15:53:53Z" finished-at="2017-12-25T15:54:23Z">
+    <test name="Default test" duration-ms="124363" started-at="2018-01-03T15:05:21Z" finished-at="2018-01-03T15:07:25Z">
       <class name="MdvrTest.Day1">
-        <test-method status="PASS" signature="Bef()[pri:0, instance:MdvrTest.Day1@6f7fd0e6]" name="Bef" is-config="true" duration-ms="9694" started-at="2017-12-25T23:53:53Z" finished-at="2017-12-25T23:54:03Z">
+        <test-method status="PASS" signature="Befor()[pri:0, instance:MdvrTest.Day1@77caeb3e]" name="Befor" is-config="true" duration-ms="14145" started-at="2018-01-03T23:05:21Z" finished-at="2018-01-03T23:05:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Bef -->
-        <test-method status="PASS" signature="Method()[pri:0, instance:MdvrTest.Day1@6f7fd0e6]" name="Method" is-config="true" duration-ms="26" started-at="2017-12-25T23:54:03Z" finished-at="2017-12-25T23:54:03Z">
+        </test-method> <!-- Befor -->
+        <test-method status="PASS" signature="Method()[pri:0, instance:MdvrTest.Day1@77caeb3e]" name="Method" is-config="true" duration-ms="19" started-at="2018-01-03T23:05:35Z" finished-at="2018-01-03T23:05:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Method -->
-        <test-method status="PASS" signature="Loginn()[pri:0, instance:MdvrTest.Day1@6f7fd0e6]" name="Loginn" duration-ms="19561" started-at="2017-12-25T23:54:03Z" finished-at="2017-12-25T23:54:22Z">
+        <test-method status="PASS" signature="Loginn()[pri:0, instance:MdvrTest.Day1@77caeb3e]" name="Loginn" duration-ms="26079" started-at="2018-01-03T23:05:35Z" finished-at="2018-01-03T23:06:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginn -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:MdvrTest.Day1@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="678" started-at="2017-12-25T23:54:22Z" finished-at="2017-12-25T23:54:23Z">
+        <test-method status="PASS" signature="Method()[pri:0, instance:MdvrTest.Day1@77caeb3e]" name="Method" is-config="true" duration-ms="3" started-at="2018-01-03T23:06:01Z" finished-at="2018-01-03T23:06:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Method -->
+        <test-method status="PASS" signature="Loginn2()[pri:0, instance:MdvrTest.Day1@77caeb3e]" name="Loginn2" duration-ms="83195" started-at="2018-01-03T23:06:01Z" finished-at="2018-01-03T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginn2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MdvrTest.Day1@77caeb3e]" name="tearDown" is-config="true" duration-ms="910" started-at="2018-01-03T23:07:25Z" finished-at="2018-01-03T23:07:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

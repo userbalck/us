@@ -1,9 +1,0 @@
-D:\us\c+4\TcpClik\TcpClik\bin\Debug\TcpClik.exe.config
-D:\us\c+4\TcpClik\TcpClik\bin\Debug\TcpClik.exe
-D:\us\c+4\TcpClik\TcpClik\bin\Debug\TcpClik.pdb
-D:\us\c+4\TcpClik\TcpClik\obj\Debug\TcpClik.csprojResolveAssemblyReference.cache
-D:\us\c+4\TcpClik\TcpClik\obj\Debug\TcpClik.Form1.resources
-D:\us\c+4\TcpClik\TcpClik\obj\Debug\TcpClik.Properties.Resources.resources
-D:\us\c+4\TcpClik\TcpClik\obj\Debug\TcpClik.csproj.GenerateResource.Cache
-D:\us\c+4\TcpClik\TcpClik\obj\Debug\TcpClik.exe
-D:\us\c+4\TcpClik\TcpClik\obj\Debug\TcpClik.pdb

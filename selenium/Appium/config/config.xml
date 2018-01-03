@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-	<http>https://www.baidu.com/</http>
+	<http>192.168.20.26</http>
 	<browser>firefox</browser>
 	<waitTime>10</waitTime>
 	<adminuser>admin</adminuser>
 	<passpwd>120223</passpwd>
+	<app>app</app>
+	<appPackage>com.streamaxtech.mdvr.direct</appPackage>
+	<appActivity>WifiListActivity</appActivity>
 	<asp>inurl:asp?id=66</asp>
 </config>

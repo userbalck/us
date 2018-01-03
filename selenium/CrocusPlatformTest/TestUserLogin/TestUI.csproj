@@ -57,6 +57,7 @@
     <Compile Include="Class\RMXML.cs" />
     <Compile Include="IE_Test\IE_Test.cs" />
     <Compile Include="LocatYyaml.cs" />
+    <Compile Include="Titme\Timee.cs" />
     <Compile Include="N9M_IE\IE_user.cs" />
     <Compile Include="TestUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

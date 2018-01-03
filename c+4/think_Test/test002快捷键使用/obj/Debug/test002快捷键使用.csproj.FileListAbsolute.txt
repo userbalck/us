@@ -1,6 +1,0 @@
-D:\us\c+4\think_Test\test002快捷键使用\bin\Debug\test002快捷键使用.exe.config
-D:\us\c+4\think_Test\test002快捷键使用\bin\Debug\test002快捷键使用.exe
-D:\us\c+4\think_Test\test002快捷键使用\bin\Debug\test002快捷键使用.pdb
-D:\us\c+4\think_Test\test002快捷键使用\obj\Debug\test002快捷键使用.csprojResolveAssemblyReference.cache
-D:\us\c+4\think_Test\test002快捷键使用\obj\Debug\test002快捷键使用.exe
-D:\us\c+4\think_Test\test002快捷键使用\obj\Debug\test002快捷键使用.pdb

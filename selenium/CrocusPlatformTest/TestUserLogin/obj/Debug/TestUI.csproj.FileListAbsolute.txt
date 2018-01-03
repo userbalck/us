@@ -32,3 +32,11 @@ D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\WebDriver.Support.
 D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Yaml.dll
 D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\Crocus.TestUI.dll
 D:\GitHui\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\Crocus.TestUI.pdb
+D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll
+D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.pdb
+D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\nunit.framework.dll
+D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\WebDriver.dll
+D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\WebDriver.Support.dll
+D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Yaml.dll
+D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\Crocus.TestUI.dll
+D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\obj\Debug\Crocus.TestUI.pdb
