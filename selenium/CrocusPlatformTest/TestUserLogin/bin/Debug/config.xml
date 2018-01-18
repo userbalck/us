@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <Platform>
-    <IP>192.168.20.44</IP>
+    <IP>192.168.20.26</IP>
     <Port>8000</Port>
     <Time>10</Time>
     <Browser>ie</Browser>
     <user>admin</user>
     <pwd>120223</pwd>
   </Platform>
-  <Case>
-    <tc_UserLogin />
-  </Case>
+  <Assertion>
+    <factory>00890001A7</factory>
+  </Assertion>
 </root>

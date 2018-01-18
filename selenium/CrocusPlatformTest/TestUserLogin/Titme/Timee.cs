@@ -42,7 +42,8 @@ namespace Crocus.TestUI
              pwd = xmlConfig.gNode("Platform/pwd").InnerText;
             Console.WriteLine("TestSetUp");
         }
-        [Test]
+		[Ignore("11")]	
+		 //[Test]
         public void Titmesz() {
 			ple.getElement("config").Click();
 

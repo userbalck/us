@@ -28,13 +28,14 @@ public class Day1 {
 		ApkDrivcesr apk=new ApkDrivcesr();
 		DesiredCapabilities capabilities=apk.GetCap();
         //初始化连接安卓系统，
-        drives = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        drives = new AndroidDriver(new URL("http://192.168.30.80:4723/wd/hub"), capabilities);
         System.out.println("App is launched!"+drives);
 		Assist.ty(5);
 	}
 	@BeforeMethod
-	public void Method(){	
+	public void Method() throws Exception{	
 		System.out.println("Method");
+		Assist.ty(10);
 		pl=new LocatoSamaple(drives);
 	}
 	@Test

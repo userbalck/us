@@ -55,13 +55,15 @@
   <ItemGroup>
     <Compile Include="Class\Core.cs" />
     <Compile Include="Class\RMXML.cs" />
+    <Compile Include="IE_info\Config_infot.cs" />
     <Compile Include="IE_Test\IE_Test.cs" />
-    <Compile Include="LocatYyaml.cs" />
+    <Compile Include="PulicWeb\Assertion.cs" />
+    <Compile Include="PulicWeb\LocatYyaml.cs" />
+    <Compile Include="Set_info\Set_info.cs" />
     <Compile Include="Titme\Timee.cs" />
     <Compile Include="N9M_IE\IE_user.cs" />
-    <Compile Include="TestUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebDriver.cs" />
+    <Compile Include="PulicWeb\WebDriver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

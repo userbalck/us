@@ -6,7 +6,7 @@
 	<adminuser>admin</adminuser>
 	<passpwd>120223</passpwd>
 	<app>app</app>
-	<appPackage>com.streamaxtech.mdvr.direct</appPackage>
-	<appActivity>WifiListActivity</appActivity>
+	<appPackage>com.streamaxtech.e6</appPackage>
+	<appActivity>MainActivity</appActivity>
 	<asp>inurl:asp?id=66</asp>
 </config>

@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-<<<<<<< HEAD
-  <TopNode>[0-1009]D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll</TopNode>
-  <SelectedNode>[0-1003]Crocus.TestUI.Timee.Titmesz</SelectedNode>
+  <TopNode>[0-1006]D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll</TopNode>
+  <SelectedNode>[0-1001]Crocus.TestUI.Config_infot.UserSet</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1009]D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll" Expanded="true" />
-    <Node UniqueName="[0-1010]Crocus" Expanded="true" />
-    <Node UniqueName="[0-1011]Crocus.TestUI" Expanded="true" />
-=======
-  <TopNode>[0-1007]D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll</TopNode>
-  <SelectedNode>[0-1003]Crocus.TestUI.Ie_user.UserNull</SelectedNode>
-  <ExcludeCategories>false</ExcludeCategories>
-  <Nodes>
-    <Node UniqueName="[0-1007]D:\Gitus\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll" Expanded="true" />
-    <Node UniqueName="[0-1008]Crocus" Expanded="true" />
-    <Node UniqueName="[0-1009]Crocus.TestUI" Expanded="true" />
->>>>>>> 1cce76996a288d93e2decf71290fc3556ef23947
-    <Node UniqueName="[0-1000]Crocus.TestUI.IE_Test" Expanded="true" />
-    <Node UniqueName="[0-1004]Crocus.TestUI.Ie_user" Expanded="true" />
-    <Node UniqueName="[0-1006]Crocus.TestUI.TestUI" Expanded="true" />
-    <Node UniqueName="[0-1002]Crocus.TestUI.Timee" Expanded="true" />
+    <Node UniqueName="[0-1006]D:\giT\us\selenium\CrocusPlatformTest\TestUserLogin\bin\Debug\Crocus.TestUI.dll" Expanded="true" />
+    <Node UniqueName="[0-1007]Crocus" Expanded="true" />
+    <Node UniqueName="[0-1008]Crocus.TestUI" Expanded="true" />
+    <Node UniqueName="[0-1000]Crocus.TestUI.Config_infot" Expanded="true" />
+    <Node UniqueName="[0-1002]Crocus.TestUI.IE_Test" Expanded="true" />
   </Nodes>
 </VisualState>

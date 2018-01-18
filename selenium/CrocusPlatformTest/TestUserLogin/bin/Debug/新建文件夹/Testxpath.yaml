@@ -1,0 +1,189 @@
+用户名:
+  type:xpath
+  value:".//*[@id='username']"
+密码:
+  type:xpath
+  value:".//*[@id='userpwd']"
+登录:
+  type:xpath
+  value:"//div[@type='button']"
+返回:
+  type:xpath
+  value:"html/body/center/div/div/b/a"
+确定:
+  type:xpath
+  value:".//*[@id='btnOk']"
+c运维:
+  type:xpath
+  value:".//*[@id='operation_']"
+c4版本信息:
+  type:xpath
+  value:".//*[@id='operation_content_left']/div[4]"
+c4设备型号:
+  type:xpath
+  value:".//*[@id='VersionInfo']/div[2]/div[2]"
+c4固件版本:
+  type:xpath
+  value:".//*[@id='VersionInfo']/div[4]/div[2]/b" 
+c4浏览:
+  type:xpath
+  value:".//*[@id='upgrade_file']"
+c4升级:
+  type:xpath
+  value:".//*[@id='VersionInfo']/div[7]/div[2]/div/div"  
+c4升级提示:
+  type:xpath
+  value:".//*[@id='addTips']" 
+配置:
+  type:xpath
+  value:".//*[@id='config_']" 
+注册设置:
+  type:xpath
+  value:".//*[@id='li_1']/div " 
+2时间设置:
+  type:xpath
+  value:".//*[@id='li_2']/div/font"
+2通用:
+  type:xpath
+  value:".//*[@id='config_content_bgDiv']/div[2]/ul/li[1]"
+2日期格式:
+  type:xpath
+  value:".//*[@id='MDVR_TIMEP_DATEM']"  
+2时间格式:
+  type:xpath
+  value:".//*[@id='MDVR_TIMEP_TIMEM']"  
+2时区:
+  type:xpath
+  value:".//*[@id='MDVR_TIMEP_TIMEZ']"  
+2校时:
+  type:xpath
+  value:".//*[@id='config_content_bgDiv']/div[2]/ul/li[2]"
+2设备时间:
+  type:xpath
+  value:".//*[@id='timeYEAR']"   
+2年:
+  type:xpath
+  value:".//*[@id='config_content_bgDiv']/div[3]/div[3]/div/div/div[2]/span/div/div[1]/span[1]/a"  
+2年select:
+  type:xpath
+  value:".//*[@id='config_content_bgDiv']/div[3]/div[3]/div/div/div[2]/span/div/div[1]/span[1]/select"
+2js设备时间:
+  type:xpath
+  value:".//*[@id='config_content_bgDiv']/div[3]/div[3]/div/div/div[2]/span[1]/div/div[3]/a"
+2月:
+  type:xpath
+  value:".//*[@id='config_content_bgDiv']/div[3]/div[3]/div/div/div[2]/span[1]/div/div[1]/span[2]/a"
+2月sel:
+  type:xpath
+  value:".//*[@id='config_content_bgDiv']/div[3]/div[3]/div/div/div[2]/span/div/div[1]/span[2]/select"
+2日:
+  type:xpath
+  value:".//*[@id='thisMonthDate']/li[5]"
+2时:
+  type:xpath
+  value:".//*[@id='hour']"
+2分:
+  type:xpath
+  value:".//*[@id='minute']"
+2秒:
+  type:xpath
+  value:".//*[@id='second']"
+2时分秒:
+  type:xpath
+  value:".//*[@id='config_content_bgDiv']/div[3]/div[3]/div/div/div[2]/div"
+2修改时间:
+  type:xpath
+  value:".//*[@id='sys_middle']"     
+2卫星:
+  type:xpath
+  value:".//*[@id='MDVR_ATP_GE']"
+2NTP:
+  type:xpath
+  value:".//*[@id='MDVR_ATP_NE']"
+2中心:
+  type:xpath
+  value:".//*[@id='MDVR_ATP_CE']"
+2PC时间:
+  type:xpath
+  value:".//*[@id='pc_middle']" 
+开关机设置:
+  type:xpath
+  value:".//*[@id='li_3']/div "
+3开关机:
+  type:xpath
+  value:".//*[@id='config_content_bgDiv']/div[2]/ul/li[1]"
+31休眠:
+  type:xpath
+  value:".//*[@id='config_content_bgDiv']/div[2]/ul/li[2]"
+3开关机方式:
+  type:xpath
+  value:".//*[@id='MDVR_SSP_UPT']"
+3点火关机延迟:
+  type:xpath
+  value:".//*[@id='MDVR_SSP_DDS']"
+3定时开机:
+  type:xpath
+  value:".//*[@id='startTimeWeek']"
+3定时开机时:
+  type:xpath
+  value:".//*[@id='MDVR_SSP_UH']"
+3定时开机分:
+  type:xpath
+  value:".//*[@id='MDVR_SSP_UM']"
+3定时开机秒:
+  type:xpath
+  value:".//*[@id='MDVR_SSP_US']"
+3定时关机时:
+  type:xpath
+  value:".//*[@id='MDVR_SSP_DH']"
+3定时关机分:
+  type:xpath
+  value:".//*[@id='MDVR_SSP_DM']"
+3定时关机秒:
+  type:xpath
+  value:".//*[@id='MDVR_SSP_DS']"
+3背光时间:
+  type:xpath
+  value:".//*[@id='MDVR_SSP_UPT']"     
+用户设置:
+  type:xpath
+  value:".//*[@id='li_4']/div "
+添加用户:
+  type:xpath
+  value:".//*[@id='user_add_middle']"
+删除用户:
+  type:xpath
+  value:".//*[@id='user_delete_middle']"
+编辑用户:
+  type:xpath
+  value:".//*[@id='user_modify_middle']"  
+添加用户名:
+  type:xpath
+  value:".//*[@id='textUserName'] "  
+4密码:
+  type:xpath
+  value:".//*[@id='txtPwd']"
+4密码1:
+  type:xpath
+  value:".//*[@id='txtOkPwd']"
+4确定添加:
+  type:xpath
+  value:".//*[@id='btnSubmit_middle']"
+管理员1:
+  type:xpath
+  value:".//*[@id='rdo0']"
+普通用户1:
+  type:xpath
+  value:".//*[@id='rdo1']"   
+默认:
+  type:xpath
+  value:".//*[@id='default_middle']" 
+保存:
+  type:xpath
+  value:".//*[@id='save_middle']" 
+注销:
+  type:xpath
+  value:"//div[@onclick='LoginOut();']"   
+  
+  
+  

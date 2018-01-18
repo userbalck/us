@@ -4,6 +4,15 @@ login:xpath:.//*[@id='loginform']/div/div[6]/div[3]
 注销:xpath://div[@onclick='LoginOut();']
 配置参数页面:xpath:123
 config:xpath:.//*[@id='config_']
+-------:----注册信息1------:---------
+config_font_size:xpath:.//*[@id='li_1']/div
+序列号:xpath://label[@class='config_content_div_p']
+设备自编号:xpath://input[@id='MDVR_RIP_DEVID']
+车牌号:xpath://input[@id='MDVR_RIP_BN']
+车辆自编号:xpath://input[@id='MDVR_RIP_BID']
+线路号:xpath:.//*[@id='MDVR_RIP_LN']
+工号:xpath:.//*[@id='MDVR_RIP_DID']
+dname:xpath:.//*[@id='MDVR_RIP_DNAME']
 -------:----时间2------:---------
 时间设置:xpath:.//*[@id='li_2']/div/font
 通用:xpath:.//*[@id='config_content_bgDiv']/div[2]/ul/li[1]
