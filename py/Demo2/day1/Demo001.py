@@ -15,6 +15,7 @@ print(a);
 查询find
 找到会返回大于0值，没有找到会小于0
 '''
+print("find:"+a);
 a.find("world");
 a,b=0,1;
 

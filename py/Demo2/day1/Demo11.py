@@ -1,0 +1,9 @@
+#coding:utf-8
+#y元组,修改内容
+a=(1,2,3);
+print(a);
+b=list(a);
+b[0]=5;
+print(b)
+a=tuple(b);
+print(a);
