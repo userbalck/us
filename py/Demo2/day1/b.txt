@@ -1,3 +1,1 @@
-hell 
-weinio
-heishou
+b.txt写文件,w

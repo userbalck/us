@@ -5,8 +5,10 @@ import random;
 
 
 def sava_url_content(url,folder_path=None):
+    if not (url.startswith("http://") or url.startswith("https://")):
+        return u"url网址不合法"
     try:
-        print(url)
+
         d=urllib.urlopen(url);
         print(d)
     except Exception as e:
@@ -22,19 +24,20 @@ def sava_url_content(url,folder_path=None):
     d.close();
     return file_path;
 
+def get_url_siez(url):
+    #获取href统计出现多少次
+    if not (url.startswith("http://") or url.startswith("https://")):
+        return u"url网址不合法"
+    d=urllib.urlopen(url);
+    content= d.read();  #读取
 
-def sava_url(url,folder_path=None):
-    if not (url.startswith('http://') or url.startswith('https://')):
-        return u'url地址不符合规格'
-    if not os.path.isdir(folder_path):
-        return u'folder_path非文件夹'
+    lenint=len(content.split("<a href=")) - 1
+    return lenint;
 
-    d = urllib.urlopen(url)
-    return "svaurl";
-    content = d.read()
-    rand_filename = 'test_%s' % random.randint(1, 1000);
+print(get_url_siez("http://www.baidu.com/"));
 
+#注意路径符号
+'''
+print(sava_url_content("http://www.baidu.com/","E:/py/Demo2/day2"));
+'''
 
-#print(sava_url("https://www.baidu.com/","E:/pys"));
-
-print(sava_url_content("https://www.baidu.com/","E:/py"));
